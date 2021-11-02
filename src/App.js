@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <>
+      <Navbar bg="dark" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">Kahvikauppa xxxx</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="m-auto">
+              <Nav.Link href="#home">Koti</Nav.Link>
+              <Nav.Link href="#link">Linkki</Nav.Link>
+              <NavDropdown title="Pudotushommeli" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">jtn</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">toinen jtn</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">jtn muuta</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <footer className="py-3 my-4">
+        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Koti</a></li>
+          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Jne jne jne</a></li>
+          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Hinnat</a></li>
+          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Usein kysyttyjä</a></li>
+          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Jotain meistä</a></li>
+        </ul>
+        <p class="text-center text-muted">Syksy 2021 paras projekti</p>
+    </footer>
+    </>
+  )
 }
-
-export default App;
