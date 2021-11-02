@@ -33,7 +33,7 @@ export default function App() {
           <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Usein kysyttyjä</a></li>
           <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Jotain meistä</a></li>
         </ul>
-        <p class="text-center text-muted">Syksy 2021 paras projekti testi</p>
+        <p class="text-center text-muted">Syksy 2021 Verkkokauppa projekti</p>
     </footer>
     </>
   )
