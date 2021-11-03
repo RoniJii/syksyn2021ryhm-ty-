@@ -34,7 +34,7 @@ export default function App() {
       <p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
 
       <p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
-
+<p>Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
       <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
