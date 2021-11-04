@@ -34,7 +34,7 @@ export default function App() {
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
         <figure>
-          <img src="../img/piqsels.com-id-zkulh.jpg" class="float-end" alt="..."></img>
+          <img src={require("./images/kahvipussit.jpg").default} className="img-fluid" alt="..."/>
         </figure>
       </div>
 
