@@ -31,7 +31,7 @@ export default function App() {
       </Navbar>
       <div class="row">
         <div class="container-fluid">
-          <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
+          <p className="info">Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
         <figure>
           <img src={require("./images/kahvipussit.jpg").default} className="img-fluid" alt="..."/>
@@ -39,20 +39,20 @@ export default function App() {
       </div>
 
       <div class="container-fluid">
-        <p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
+        <p className="info">Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
       </div>
 
       <div class="container-fluid">
-        <p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
+        <p className="info">Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
             tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
       </div>
 
      <div class="container-fluid">
-      <p>Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
+      <p className="info">Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
      </div>
 
      <div class="container-fluid">
-        <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
+        <p className="info">Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
       </div>
 
       <footer className="py-3 my-4">
