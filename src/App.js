@@ -38,39 +38,29 @@ export default function App() {
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä.
              Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
+        <div class="container-fluid">
         <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="images.js/100px180" />
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Paras kahvi</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+    Nyt 50% alennuksessa Paras kahvi!
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary">Lisää ostoskoriin</Button>
   </Card.Body>
 </Card>
+<p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
+<p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
+            tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
+            <p>Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
+            <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
+</div>
         <figure>
           <img src={require("./images/kahvipussit.jpg").default} height="360" class="column col-6 float-end" alt="kahvipussi"/>
         </figure>
       </div>
       </div>
 
-      <div class="container-fluid">
-        <p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
-      </div>
-
-      <div class="container-fluid">
-        <p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
-            tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
-      </div>
-
-     <div class="container-fluid">
-      <p>Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
-     </div>
-
-     <div class="container-fluid">
-        <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
-      </div>
 
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
