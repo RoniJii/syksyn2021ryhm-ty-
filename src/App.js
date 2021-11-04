@@ -29,13 +29,15 @@ export default function App() {
           
         </Container>
       </Navbar>
-      <div class="row">
-        <div class="container-fluid">
+      <div class="container">
+      <div class="row" id="erivi">
+        <div class="column col-5 float-start" id="teksti">
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
         <figure>
-          <img src={require("./images/kahvipussit.jpg").default} className="img-fluid" alt="..."/>
+          <img src={require("./images/kahvipussit.jpg").default} height="360" class="column col-6 float-end" alt="kahvipussi"/>
         </figure>
+      </div>
       </div>
 
       <div class="container-fluid">
