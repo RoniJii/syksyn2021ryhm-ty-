@@ -31,7 +31,7 @@ export default function App() {
       </Navbar>
       <div class="container">
       <div class="row" id="erivi">
-        <div class="column col-5 float-start" id="teksti">
+        <div class="column col-6 float-start" id="teksti">
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
         <figure>
