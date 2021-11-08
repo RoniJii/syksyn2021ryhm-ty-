@@ -49,7 +49,7 @@ export default function App() {
             <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
 </div>
         <figure>
-          <img src={require("./images/kahvipussit.jpg").default} height="360" class="column col-6 float-end" alt="kahvipussi"/>
+          <img src={require("./images/kuva4.jpg").default} height="360" class="column col-6 float-end" alt="kahvipussi"/>
         </figure>
       </div>
       </div>
