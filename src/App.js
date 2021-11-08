@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Footer from './components/Footer';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,19 +29,16 @@ export default function App() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          
         </Container>
       </Navbar>
+
       <div class="container">
       <div class="row" id="erivi">
-
-
         <div class="column col-6 float-start" id="teksti">
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä.
-             Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
-
+            Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
         </div>
-        <div class="container-fluid">
+      <div class="container-fluid">
  
 <p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
 <p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
@@ -54,17 +52,8 @@ export default function App() {
       </div>
       </div>
 
+      <Footer></Footer>
 
-      <footer className="py-3 my-4">
-        <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Koti</a></li>
-          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">jne</a></li>
-          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Hinnat</a></li>
-          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Usein kysyttyä</a></li>
-          <li className="nav-item"><a href="/#" className="nav-link px-2 text-muted">Jotain meistä</a></li>
-        </ul>
-        <p class="text-center text-muted">Syksy 2021 Verkkokauppa projekti</p>
-      </footer>
     </>
   )
 }
