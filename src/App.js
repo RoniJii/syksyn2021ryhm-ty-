@@ -34,14 +34,8 @@ export default function App() {
       </Navbar>
       <div class="container">
       <div class="row" id="erivi">
-<<<<<<< HEAD
         <div class="column col-5 float-start " id="teksti">
           <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
-=======
-        <div class="column col-6 float-start" id="teksti">
-          <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä.
-             Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
->>>>>>> 9c4a14fd22f13fa1b282d5e1f286aff0b7a69ac1
         </div>
         <div class="container-fluid">
         <Card style={{ width: '18rem' }}>
