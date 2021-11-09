@@ -1,5 +1,7 @@
 import React from 'react';
+import { NavDropdown } from 'react-bootstrap';
 import {Link} from "react-router-dom";
+
 import "./Header.css";
 
 
@@ -21,7 +23,14 @@ Kaffia
 <div className= "header-links">
 <ul>
 <li>
-<Link to= "/">Ota yhteyttä</Link>
+<NavDropdown title="Tuoteryhmät" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Kahvit</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Teet</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Makeutusaineet</NavDropdown.Item>
+        
+          
+        </NavDropdown> 
+
 
 </li>
 
