@@ -9,13 +9,18 @@ function Footer() {
         <div className='input-areas'>
           <form>
             <input className='footer-input' name='email' type='email' placeholder='Sähköposti'/>
-            <button buttonStyle='btn--outline'>Tilaa</button>
+            <button>Tilaa</button>
           </form>
         </div>
       </section>
 
       <section class='footer-links'>
         <div className='footer-link-wrapper'>
+          <div class='footer-link-items'>
+            <figure>
+              LOGO TÄHÄN
+            </figure>
+          </div>
           <div class='footer-link-items'>
             <h4>Tuotteemme</h4>
             <a href='/'>Kahvit</a>
@@ -37,11 +42,9 @@ function Footer() {
         </div>
       </section>
 
-      <section>
+      <section class='rights'>
         <div>
-          <div class='footer-logo'>
-            <p>Verkkopalveluprojekti, Ryhmä 10 &copy; 2021</p>
-          </div>
+          <p>Verkkopalveluprojekti, Ryhmä 10 &copy; 2021</p>
         </div>
       </section>
     </div>
