@@ -4,16 +4,6 @@ import './footer.css';
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>Tilaa uutiskirjeemme jotain plaaplaa</p>
-        <div className='input-areas'>
-          <form>
-            <input className='footer-input' name='email' type='email' placeholder='Sähköposti'/>
-            <button>Tilaa</button>
-          </form>
-        </div>
-      </section>
-
       <section class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
