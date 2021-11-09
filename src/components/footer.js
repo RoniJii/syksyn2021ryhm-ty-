@@ -18,7 +18,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <figure>
-              LOGO TÄHÄN
+           
             </figure>
           </div>
           <div class='footer-link-items'>
