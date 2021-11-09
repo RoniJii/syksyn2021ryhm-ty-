@@ -17,3 +17,61 @@
 .navbar-toggler {
     border-color: rgba(235,247,227,1) !important;
 }
+
+.header {
+
+    top: 0;
+    min-height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color:#E3DECA ;
+    
+    }
+    
+    .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #31231D;
+    padding-left: 40px;
+    }
+    
+    .logo:hover {
+    color: #DDA35D
+    
+    
+    }
+    .header-links {
+    
+    display: flex;
+    
+    }
+    
+    .header-links ul li {
+    
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+    
+    
+    }
+    
+    .header-links ul li a {
+    
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #AA6231;
+        padding: 0px 15px;
+    
+    
+    }
+    
+    .header-links ul li a:hover {
+    
+        color:#DDA35D;
+    
+    
+    } 

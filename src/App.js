@@ -4,7 +4,6 @@ import NavbarComp from './components/NavbarComp';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
   return (
       <>
