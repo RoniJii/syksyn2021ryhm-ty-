@@ -1,10 +1,8 @@
 import './App.css';
 import React from 'react'
-
-
 import Footer from './components/footer.js';
 import data from "./components/back/Data/Data";
-import Header from "./components/front/Header/Header";
+import Header from "./components/front/header/Header";
 import {BrowserRouter as Router} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,6 +21,7 @@ const {productItems} = data;
       <>
       <Router>
       <Header/>
+     
       </Router>
       
 
