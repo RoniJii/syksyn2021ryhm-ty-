@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
-import Kuva8 from './images/kuva8.jpg';
+import Kuva3 from './images/kuva3.jpg';
 import Kuva5 from './images/kuva5.jpg';
 import Kuva6 from './images/kuva6.jpg';
 
@@ -25,7 +25,7 @@ function App() {
 
       <Carousel>
   <Carousel.Item>
-    <img
+    <img width={900} height={620}
       className="d-block w-100"
       src={Kuva6}
       alt="First slide"
@@ -35,7 +35,7 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <img width={900} height={620}
       className="d-block w-100"
       src={Kuva5}
       alt="Second slide"
@@ -46,13 +46,13 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <img width={900} height={620}
       className="d-block w-100"
-      src={Kuva8}
+      src={Kuva3}
       alt="Third slide"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption style={{color: ''}}>
      <h3>Haluatko jauhaa omat papusi? Meiltä löydät papujen jauhamiseen tarvittavat laitteet!</h3>
     </Carousel.Caption>
   </Carousel.Item>
@@ -63,7 +63,7 @@ function App() {
 </div>
 {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
-      <Card>
+      <Card style={{background: '#DDA35D'}}>
         <Card.Img src={require("./images/kuva1.png").default} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -77,7 +77,7 @@ function App() {
 
 {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
-      <Card>
+      <Card style={{background: '#DDA35D'}}>
         <Card.Img src={require("./images/kuva2.png").default} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -92,8 +92,8 @@ function App() {
 
 {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
-      <Card>
-        <Card.Img src={require("./images/kuva3.jpg").default} />
+      <Card style={{background: '#DDA35D'}}>
+        <Card.Img src={require("./images/kuva8.jpg").default} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -107,7 +107,7 @@ function App() {
 
   {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
-      <Card>
+      <Card style={{background: '#DDA35D'}}>
         <Card.Img src={require("./images/kuva4.jpg").default} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
