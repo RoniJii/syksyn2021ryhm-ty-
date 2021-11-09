@@ -19,6 +19,11 @@ color: #31231D;
 padding-left: 40px;
 }
 
+.logo:hover {
+color: #DDA35D
+
+
+}
 .header-links {
 
 display: flex;
