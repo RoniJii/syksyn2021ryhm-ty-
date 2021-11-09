@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -32,22 +32,18 @@ export default function App() {
           
         </Container>
       </Navbar>
+
       <div class="container">
       <div class="row" id="erivi">
-        <div class="column col-5 float-start " id="teksti">
-          <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä. Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
+
+
+        <div class="column col-6 float-start" id="teksti">
+          <p>Kahvila xxx on paikallinen yritys, joka tuo kauppaan laadukkaita erityiskahveja ja teetä.
+             Tuotteet ovat huolella jalostettuja, jotta saisit parhaimman nautinnon!</p>
+
         </div>
         <div class="container-fluid">
-        <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="images.js/100px180" />
-  <Card.Body>
-    <Card.Title>Paras kahvi</Card.Title>
-    <Card.Text>
-    Nyt 50% alennuksessa Paras kahvi!
-    </Card.Text>
-    <Button variant="primary">Lisää ostoskoriin</Button>
-  </Card.Body>
-</Card>
+ 
 <p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
 <p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
             tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
