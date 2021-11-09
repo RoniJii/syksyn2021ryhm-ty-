@@ -5,7 +5,11 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import Kuva8 from './images/kuva8.jpg';
+import Kuva5 from './images/kuva5.jpg';
+import Kuva6 from './images/kuva6.jpg';
+
 
 function App() {
   return (
@@ -23,45 +27,39 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="./images/kuva5.jpg"
+      src={Kuva6}
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <h3>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="./images/kuva6.jpg"
+      src={Kuva5}
       alt="Second slide"
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h3> Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="./images/kuva7.jpg"
+      src={Kuva8}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+     <h3>Haluatko jauhaa omat papusi? Meiltä löydät papujen jauhamiseen tarvittavat laitteet!</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
  
-<p>Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.</p>
-<p>Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
-            tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.</p>
-            <p>Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</p>
-            <p>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</p>
+            
+<br />
 </div>
 {Array.from({ length: 1 }).map((_, idx) => (
     <Col>
@@ -122,20 +120,6 @@ function App() {
     </Col>
   ))}
 
-{Array.from({ length: 1 }).map((_, idx) => (
-    <Col>
-      <Card>
-        <Card.Img src={require("./images/kuva5.jpg").default} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
       </div>
       </div>
 

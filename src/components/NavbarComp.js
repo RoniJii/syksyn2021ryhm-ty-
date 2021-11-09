@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './navbar.css';
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
+import Logo from './logo.png';
 
 export default class NavbarComp extends Component {
     render() {
@@ -9,7 +10,7 @@ export default class NavbarComp extends Component {
           <Navbar fixed="top" class="navbar" expand="lg">
             <Container fluid>
               <Navbar.Brand href="#">
-                <img className= "Header-logo" src="/images/logo.png"></img>
+                <img className= "Header-logo" src={Logo} style={{ maxHeight: '100px'}}></img>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
