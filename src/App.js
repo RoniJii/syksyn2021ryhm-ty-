@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import NavbarComp from './components/NavbarComp';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
