@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './navbar.css';
-import { Navbar, Nav, NavDropdown, Container,Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 
 export default class NavbarComp extends Component {
     render() {
@@ -9,7 +9,7 @@ export default class NavbarComp extends Component {
           <Navbar fixed="top" class="navbar" expand="lg">
             <Container fluid>
               <Navbar.Brand href="#">
-          <img className= "Header-logo" src="/images/logo.png"></img>
+                <img className= "Header-logo" src="/images/logo.png"></img>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
@@ -25,14 +25,14 @@ export default class NavbarComp extends Component {
                   <Nav.Link href="#"><i class = "fas fa-shopping-cart"/></Nav.Link>
                 </Nav>
                 <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Hae tuotteita"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Hae</Button>
-      </Form>
+                  <FormControl
+                  type="search"
+                  placeholder="Hae tuotteita"
+                  className="me-2"
+                  aria-label="Search"
+                  />
+                  <Button variant="outline-success">Hae</Button>
+                </Form>
               </Navbar.Collapse>
             </Container>
           </Navbar>
