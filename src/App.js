@@ -1,37 +1,14 @@
 import './App.css';
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Footer from './components/Footer.js';
-
-
+import React from 'react';
+import NavbarComp from './components/NavbarComp';
+import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export default function App() {
+function App() {
   return (
-    
       <>
-      <Navbar bg="dark" variant="dark" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">Kahvikauppa xxxx</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="m-auto">
-              <Nav.Link href="#home">Koti</Nav.Link>
-              <Nav.Link href="#link">Linkki</Nav.Link>
-              <NavDropdown title="Pudotushommeli" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">jtn</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">toinen jtn</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">jtn muuta</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+      <NavbarComp/>
       <div class="container">
       <div class="row" id="erivi">
         <div class="column col-6 float-start" id="teksti">
@@ -52,8 +29,10 @@ export default function App() {
       </div>
       </div>
 
-      <Footer></Footer>
+      <Footer/>
 
     </>
-  )
+  );
 }
+
+export default App;
