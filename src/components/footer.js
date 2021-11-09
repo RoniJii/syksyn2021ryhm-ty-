@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer-container'>
       <section class='footer-links'>
-        <div className='footer-link-wrapper'>
+        <div className='footer-link-wrapper row'>
           <div class='footer-link-items'>
             <figure>
               LOGO TÄHÄN
