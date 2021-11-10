@@ -10,15 +10,15 @@ export default class NavbarComp extends Component {
           <Navbar fixed="top" class="navbar" expand="lg">
             <Container fluid>
               <Navbar.Brand href="#">
-                <img className= "Header-logo" src={Logo} style={{ maxHeight: '100px'}}></img>
+                <img className= "nav-logo" src={Logo} style={{ maxHeight: '90px'}}></img>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                   <Nav.Link href="#">ETUSIVU</Nav.Link>
                   <NavDropdown title="TUOTTEET" id="navbarScrollingDropdown">
-                    <NavDropdown.Item  href="#">KAHVIT</NavDropdown.Item>
-                    <NavDropdown.Item  href="#">TEET</NavDropdown.Item>
+                    <NavDropdown.Item href="#">KAHVIT</NavDropdown.Item>
+                    <NavDropdown.Item href="#">TEET</NavDropdown.Item>
                     <NavDropdown.Item href="#">OHEISTUOTTEET</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="#">OTA YHTEYTTÄ</Nav.Link>

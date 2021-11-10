@@ -9,7 +9,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <figure>
-              <img className= "Header-logo" src={Logo} style={{ maxHeight: '150px'}}></img>
+              <img className= "Header-logo" src={Logo} style={{ maxHeight: '140px'}}></img>
             </figure>
           </div>
           <div className='footer-link-items'>

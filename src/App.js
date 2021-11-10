@@ -83,7 +83,7 @@ function App() {
           <Card.Title>Card title</Card.Title>
           <Card.Text>
           Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
-            tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.
+            tuottajille maksetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.
           </Card.Text>
         </Card.Body>
       </Card>
