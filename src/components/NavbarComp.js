@@ -10,7 +10,7 @@ export default class NavbarComp extends Component {
           <Navbar fixed="top" class="navbar" expand="lg">
             <Container fluid>
               <Navbar.Brand href="#">
-                <img className= "nav-logo" src={Logo} style={{ maxHeight: '90px'}}></img>
+                <img className= "nav-logo" src={Logo} style={{ maxHeight: '70px'}}></img>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
