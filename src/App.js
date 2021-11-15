@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useEffect,useState} from 'react';
 import { Route, Switch } from 'react-router';
-import NavbarComp from './components/NavbarComp';
+import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import Home from './components/pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,7 +21,7 @@ useEffect(()=> {
 
   return (
     <>
-      <NavbarComp/>
+      <Navbar/>
       <div id="content" className="container-fluid">
         
       </div>
