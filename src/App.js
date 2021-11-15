@@ -10,6 +10,7 @@ import Kuva6 from './images/kuva6.jpg';
 import { useLocation } from 'react-router';
 
 
+
 function App() {
 const [cart, setCart] = useState([]);
 

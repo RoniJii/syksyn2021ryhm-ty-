@@ -4,8 +4,11 @@ import {Link} from "react-router-dom"
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 import Logo from './logo.png';
 import Cart from './Cart';
+import axios from "axios";
+
 export default class NavbarComp extends Component {
     render() {
+    
       return (
         <div>
           <Navbar fixed="top" class="navbar" expand="lg">
@@ -25,14 +28,6 @@ export default class NavbarComp extends Component {
                   <Nav.Link href="#">OTA YHTEYTTÄ</Nav.Link>
                   <Nav.Link href="#">KIRJAUDU SISÄÄN</Nav.Link>
                 <Nav.Link><Cart/></Nav.Link>
-                  
-
-                 
-                   
-                   
-                  
-                  
-                  
                 </Nav>
                 <Form className="d-flex">
                   <FormControl
@@ -49,4 +44,4 @@ export default class NavbarComp extends Component {
         </div>
       );
     }
-}
+    }
