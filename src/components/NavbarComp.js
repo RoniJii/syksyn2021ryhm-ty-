@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './navbar.css';
+import {Link} from "react-router-dom"
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 import Logo from './logo.png';
-
+import Cart from './Cart';
 export default class NavbarComp extends Component {
     render() {
       return (
@@ -23,7 +24,15 @@ export default class NavbarComp extends Component {
                   </NavDropdown>
                   <Nav.Link href="#">OTA YHTEYTTÄ</Nav.Link>
                   <Nav.Link href="#">KIRJAUDU SISÄÄN</Nav.Link>
-                  <Nav.Link href="#"><i class = "fas fa-shopping-cart"/></Nav.Link>
+                <Nav.Link><Cart/></Nav.Link>
+                  
+
+                 
+                   
+                   
+                  
+                  
+                  
                 </Nav>
                 <Form className="d-flex">
                   <FormControl
