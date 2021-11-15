@@ -2,12 +2,28 @@ import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { Link } from "react-router-dom";
 import { Form, FormControl, Button } from 'react-bootstrap';
+import axios from 'axios';
 import Logo from './logo.png';
 import Cart from './Cart';
 
 export default function Navbar({url, setCategory, cart}) {
 
-  // const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios.get(url + 'products/getcategories.php')
+      .then((response) => {
+        const json = response.data;
+        setCategories(json);
+        setCategory(json[0]);
+      }).catch (error => {
+        if (error.response === undefined) {
+          alert(error);
+        } else {
+          alert(error.response.data.error);
+        }
+      })
+},[])
 
   return (
     <nav className="navbar navbar-expand-md fixed-top">
@@ -26,7 +42,7 @@ export default function Navbar({url, setCategory, cart}) {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">TUOTTEET</a>
               <ul className="dropdown-menu" aria-labelledby="dropdown01">
-                {/* {categories.map(category => (
+                {categories.map(category => (
                   <li key={category.id}>
                     <Link className="dropdown-item"
                       to={{
@@ -40,7 +56,7 @@ export default function Navbar({url, setCategory, cart}) {
                     {category.name}
                     </Link>
                   </li>
-                ))} */}
+                ))}
               </ul>
             </li>
             <li className="nav-item">
