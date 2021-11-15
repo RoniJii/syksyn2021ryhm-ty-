@@ -1,10 +1,9 @@
 import React from 'react';
-import './App.css';
 
-function Home () {
+export default function Home () {
     return (
-        <div>
-            <h3>Tuotteet</h3>
+        <div style={{'padding-top': '100px'}}>
+            <h3>Testiä</h3>
         </div>
     );
 }
