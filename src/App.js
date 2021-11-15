@@ -3,9 +3,9 @@ import React, {useEffect,useState} from 'react';
 import { Route, Switch } from 'react-router';
 import NavbarComp from './components/NavbarComp';
 import Footer from './components/footer';
+import Home from './components/pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLocation } from 'react-router';
-import { Carousel } from 'react-bootstrap';
 
 
 function App() {
@@ -22,11 +22,9 @@ useEffect(()=> {
   return (
     <>
       <NavbarComp/>
-        <div id="content" className="container-fluid">
-
-        </div>
-
-      
+      <div id="content" className="container-fluid">
+        
+      </div>
       <Footer/>
     </>
   );
