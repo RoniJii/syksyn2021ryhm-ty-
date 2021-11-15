@@ -3,8 +3,6 @@ import React from 'react';
 import NavbarComp from './components/NavbarComp';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Kuva3 from './images/kuva3.jpg';
 import Kuva5 from './images/kuva5.jpg';
@@ -57,72 +55,11 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
- 
-            
-<br />
 </div>
-{Array.from({ length: 1 }).map((_, idx) => (
-    <Col>
-      <Card style={{background: '#DDA35D'}}>
-        <Card.Img src={require("./images/kuva1.png").default} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-          Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
 
-{Array.from({ length: 1 }).map((_, idx) => (
-    <Col>
-      <Card style={{background: '#DDA35D'}}>
-        <Card.Img src={require("./images/kuva2.png").default} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-          Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
-            tuottajille annetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-
-{Array.from({ length: 1 }).map((_, idx) => (
-    <Col>
-      <Card style={{background: '#DDA35D'}}>
-        <Card.Img src={require("./images/kuva8.jpg").default} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-
-  {Array.from({ length: 1 }).map((_, idx) => (
-    <Col>
-      <Card style={{background: '#DDA35D'}}>
-        <Card.Img src={require("./images/kuva4.jpg").default} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
 
       </div>
       </div>
-
       <Footer/>
 
     </>
