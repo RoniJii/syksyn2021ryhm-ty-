@@ -6,8 +6,14 @@
     font-size: 16px; 
 }
 
+.navbar-nav {
+    margin:0 auto;
+    display: flex;
+    
+}
 
 .nav-link {
+   
     color: #31231D !important;
     margin-left: 20px;
 }
