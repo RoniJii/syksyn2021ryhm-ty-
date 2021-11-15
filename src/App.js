@@ -13,7 +13,7 @@ import { useLocation } from 'react-router';
 function App() {
 const [cart, setCart] = useState([]);
 
-let location = useLocation ();
+let location = 
 
 useEffect(()=> {
   if ('cart' in localStorage) {
