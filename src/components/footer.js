@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 import Logo from './logo.png';
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="container-fluid">
       <section className="footer-links">
@@ -41,4 +41,3 @@ function Footer() {
   );
 }
 
-export default Footer;
