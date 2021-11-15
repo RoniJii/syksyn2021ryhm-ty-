@@ -9,13 +9,14 @@
 .navbar-nav {
     margin:0 auto;
     display: flex;
-    
+}
+
+.nav-item {
+    padding: 10px;
 }
 
 .nav-link {
-   
     color: #31231D !important;
-    margin-left: 20px;
 }
 
 .nav-link a:hover {
@@ -26,10 +27,6 @@
     border-color: rgba(235,247,227,1) !important;
 }
 
-.nav-logo {
-    padding-left: 50px;
-}
-
 Form {
-    padding-right: 50px;
+    margin-left: 10px;
 }

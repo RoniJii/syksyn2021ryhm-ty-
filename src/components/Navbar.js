@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
-import {Link} from "react-router-dom";
-// import Logo from './logo.png';
+import { Link } from "react-router-dom";
+import { Form, FormControl, Button } from 'react-bootstrap';
+import Logo from './logo.png';
 import Cart from './Cart';
 
 export default function Navbar({url, setCategory, cart}) {
@@ -9,19 +10,21 @@ export default function Navbar({url, setCategory, cart}) {
   // const [categories, setCategories] = useState([]);
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav className="navbar navbar-expand-md fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Web shop</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
+            <li>
+            <Link className="navbar-brand" to="/"><img className= "nav-logo" src={Logo} style={{ maxHeight: '70px'}}></img></Link>
+            </li>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">Home</Link>
+              <Link className="nav-link" aria-current="page" to="/">ETUSIVU</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+              <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">TUOTTEET</a>
               <ul className="dropdown-menu" aria-labelledby="dropdown01">
                 {/* {categories.map(category => (
                   <li key={category.id}>
@@ -40,12 +43,27 @@ export default function Navbar({url, setCategory, cart}) {
                 ))} */}
               </ul>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/">OTA YHTEYTTÄ</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" aria-current="page" to="/">KIRJAUDU SISÄÄN</Link>
+            </li>
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Cart cart={cart}/>
             </li>
           </ul>
+          <Form className="d-flex">
+            <FormControl
+              type="search"
+              placeholder="Hae tuotteita"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Hae</Button>
+          </Form> 
         </div>
       </div>
     </nav>
