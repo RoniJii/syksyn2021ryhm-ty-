@@ -9,19 +9,21 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
     //const [zip, setZip] = useState("");
     //const [city, setCity] = useState("");
     //const [finished, setFinished] = useState(false);
-    const [inputs, setInputs] = useState("");
+    const [inputs, setInputs] = useState([]);
     const [inputIndex, setInputIndex] = useState(-1)
-
+    const cartlenght = Object.keys(cart).length;
 
     function changeAmount(e,product,index) {
+        
         updateAmount(e.target.value,product);
         setInputIndex(index);
     }
 
     useEffect(() => {
-       for ( let i = 0;i<cart.lenght; i++)
+       
+       for ( let i = 0;i<cartlenght; i++)
             inputs[i] = createRef();
-    }, [cart.lenght, inputs])
+    }, [cartlenght, inputs])
 
     useEffect(() => {
         if (inputs.length > 0 && inputIndex > -1 && inputs[inputIndex.current] !== null) {
@@ -29,30 +31,31 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
         }
     }, [cart, inputs, inputIndex])
     return (
-    
-        <div style={{marginTop: '160px'}}>
-            {cart.map((product,index) => {
-              //  sum+=parseFloat(product.price);
-                    return(
-                        <tr kry={uuidv4()}>
-                            <td>{product.name}</td>
-                            <td>{product.price} €</td>
-                           <td><input
-                                style={{width: '60px'}}
-                                type="number" step="1" min="1"
-                                onChange={e => changeAmount(e,product,index)}
-                                value={product.amount}/></td>
-                            <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
-                        </tr>
-                    )
-            })}
-{/*             <tr key={uuidv4()}>
-                <td className="sumrow"></td>
-                <td className="sumrow">{sum.toFixed(2)}€</td>
-                <td className="sumrow"></td>
-                <td className="sumrow"></td>
-                <td className="sumrow"></td>
-            </tr> */}
-        </div>
+        <table style={{marginTop: '160px'}}>
+            <tbody>
+                {cart.map((product,index) => {
+                //  sum+=parseFloat(product.price);
+                        return(
+                            <tr key={uuidv4()}>
+                                <td>{product.name}</td>
+                                <td>{product.price} €</td>
+                            <td><input
+                                    style={{width: '60px'}}
+                                    type="number" step="1" min="1"
+                                    onChange={e => changeAmount(e,product,index)}
+                                    value={product.amount}/></td> 
+                                <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
+                            </tr>
+                        )
+                })}
+    {/*             <tr key={uuidv4()}>
+                    <td className="sumrow"></td>
+                    <td className="sumrow">{sum.toFixed(2)}€</td>
+                    <td className="sumrow"></td>
+                    <td className="sumrow"></td>
+                    <td className="sumrow"></td>
+                </tr> */}
+            </tbody>
+        </table>
     )
 }
