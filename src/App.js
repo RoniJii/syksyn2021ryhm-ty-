@@ -39,8 +39,7 @@ export default function App() {
           updateAmount(parseInt(existingProduct[0].amount) +1, product);
         }
         else {
-          product["amount"] = 1;
-          console.log(product.name + "määrä: " + product.amount)
+          product["amount"] = 1
           const newCart = [...cart,product];
           setCart(newCart); 
           localStorage.setItem('cart',JSON.stringify(newCart));
