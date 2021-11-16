@@ -1,6 +1,7 @@
 import './App.css';
 import Navibar from './components/Navbar';
 import Footer from './components/Footer';
+import Cards from './components/Cards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useEffect, useState}  from 'react';
 import Home from './components/pages/Home';
@@ -88,6 +89,7 @@ export default function App() {
                 removeFromCart={removeFromCart} />} 
               /> 
           </Switch>
+          <Cards/>
           <Footer/>
           </div> 
         </>

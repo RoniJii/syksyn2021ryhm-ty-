@@ -1,72 +1,54 @@
 import React from 'react';
 import './cards.css';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-
+import CardItem from './CardItem';
+import Kuva1 from './images/kuva1.png';
+import Kuva2 from './images/kuva2.png';
+import Kuva5 from './images/kuva5.jpg';
 
 function Cards() {
-    return (
-        <div>
-        {Array.from({ length: 1 }).map((_, idx) => (
-        <Col>
-        <Card style={{background: '#DDA35D'}}>
-            <Card.Img src={require("./images/kuva1.png").default} />
-            <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-            Löydät monipuolisesta valikoimasta erilaista kahvia, teetä ja jauhamistuotteita.
-            </Card.Text>
-            </Card.Body>
-        </Card>
-        </Col>
-        ))}
-
-        {Array.from({ length: 1 }).map((_, idx) => (
-            <Col>
-            <Card style={{background: '#DDA35D'}}>
-                <Card.Img src={require("./images/kuva2.png").default} />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                Tuotteiden hankinnassa pyritään tuottamaan vastuullisesti ja eettisesti. Kaikille 
-                    tuottajille maksetaan tasavertaisesti palkkaa ja kuljetusta pyritään minimoimaan.
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        ))}
-
-        {Array.from({ length: 1 }).map((_, idx) => (
-            <Col>
-            <Card style={{background: '#DDA35D'}}>
-                <Card.Img src={require("./images/kuva8.jpg").default} />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit longer.
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        ))}
-
-        {Array.from({ length: 1 }).map((_, idx) => (
-            <Col>
-            <Card style={{background: '#DDA35D'}}>
-                <Card.Img src={require("./images/kuva4.jpg").default} />
-                <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit longer.
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        ))}
+  return (
+    <div className='cards'>
+      <h3>Löydät monipuolisesta valikoimastamme erilaisia kahveja, teetä ja oheistuotteita.</h3>
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
+            <CardItem
+              src={Kuva5}
+              text='Jouluiset kahvit ja teet ovat saapuneet valikoimaamme!'
+              label='UUTTA!'
+              path='/'
+            />
+            <CardItem
+              src={Kuva5}
+              text='Jouluiset kahvit ja teet ovat saapuneet valikoimaamme!'
+              label='UUTTA!'
+              path='/'
+            />
+          </ul>
+          <ul className='cards__items'>
+            <CardItem
+              src={Kuva1}
+              text='Tutustu ja ihastu laadukkaaseen kahvivalikoimaamme!'
+              label='KAHVIT'
+              path='/'
+            />
+            <CardItem
+              src={Kuva2}
+              text='Tutustu ja ihastu monipuoliseen teevalikoimaamme!'
+              label='TEET'
+              path='/'
+            />
+            <CardItem
+              src={Kuva2}
+              text='Meiltä löydät myös kahvin ja teen valmistukseen tarvittavat välineet!'
+              label='OHEISTUOTTEET'
+              path='/'
+            />
+          </ul>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Cards;
