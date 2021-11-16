@@ -4,7 +4,7 @@ import Kuva3 from './images/kuva3.jpg';
 import Kuva5 from './images/kuva5.jpg';
 import Kuva6 from './images/kuva6.jpg';
 
-function Karuselli() {
+export default function Karuselli() {
     return (
         <div>
             <Carousel>

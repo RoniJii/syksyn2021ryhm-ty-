@@ -1,6 +1,6 @@
 import './App.css';
 import Navibar from './components/Navbar';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useEffect, useState}  from 'react';
 import Home from './components/pages/Home';
@@ -87,8 +87,8 @@ export default function App() {
                /*  empty={emptyCart} */
                 removeFromCart={removeFromCart} />} 
               /> 
-              <Footer/>
           </Switch>
+          <Footer/>
           </div> 
         </>
     )
