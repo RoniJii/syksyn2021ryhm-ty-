@@ -9,7 +9,7 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
     //const [zip, setZip] = useState("");
     //const [city, setCity] = useState("");
     //const [finished, setFinished] = useState(false);
-    const [inputs, setInputs] = useState("");
+    const [inputs, setInputs] = useState([]);
     const [inputIndex, setInputIndex] = useState(-1)
 
 
@@ -34,7 +34,7 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
             {cart.map((product,index) => {
               //  sum+=parseFloat(product.price);
                     return(
-                        <tr kry={uuidv4()}>
+                        <tr key={uuidv4()}>
                             <td>{product.name}</td>
                             <td>{product.price} €</td>
                            <td><input
