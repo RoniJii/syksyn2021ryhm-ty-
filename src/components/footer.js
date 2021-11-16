@@ -4,7 +4,7 @@ import Logo from './logo.png';
 
 export default function Footer() {
   return (
-    <div className="container-fluid">
+    <div className="footer-container-fluid">
       <section className="footer-links">
         <div className="footer-link-wrapper row">
           <div className="footer-link-items col-sm-12 col-md-2">
