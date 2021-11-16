@@ -23,7 +23,7 @@ export default function Navbar({url, setCategory, cart}) {
           alert(error.response.data.error);
         }
       })
-},[])
+},[url, setCategory])
 
   return (
     <nav className="navbar navbar-expand-md fixed-top">
