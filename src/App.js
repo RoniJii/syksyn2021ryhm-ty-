@@ -1,6 +1,6 @@
 import './App.css';
 import Navibar from './components/Navbar';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import Cards from './components/Cards';
 import Karuselli from './components/Karuselli';
 import 'bootstrap/dist/css/bootstrap.min.css';

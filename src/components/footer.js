@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 import Logo from './logo.png';
 
-export default function Footer() {
+export default function footer() {
   return (
     <div className="footer-container-fluid">
       <section className="footer-links">
