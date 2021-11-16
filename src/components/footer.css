@@ -1,10 +1,11 @@
 .container-fluid {
     background-color: #E3DECA;
-    padding: 40px 0 10px 0;
+    padding: 10px 0 10px 0;
     flex-direction: column;
-    justify-content: center;
+    display: flex;
     align-items: center;
     color: #31231D;
+    width: 100%;
   }
   
   .footer-links {
