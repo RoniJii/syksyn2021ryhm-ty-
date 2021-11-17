@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from '../Cards';
 import Karuselli from '../Karuselli';
+import '../../App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
@@ -32,7 +33,7 @@ export default function Home({url, category, addToCart}) {
     }, [category, url])
 
     return (
-        <div style={{marginTop: '100px'}}>
+        <div className='container-fluid' style={{marginTop: '100px'}}>
         <h3>{category?.name}</h3>
         {products.map(product => (
             <div key={product.id}>
