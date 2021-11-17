@@ -9,7 +9,7 @@ export default function Contact() {
         <h4>KAFFIA - COFFEE AND MORE</h4>
         <br/>
         <p>Verkkopalveluprojekti</p>
-        <p>Projektissa mukana Henna Törmänen, Matleena Autio, Roni Junttila & Valtteri Nevala</p>
+        <p>Projektissa mukana Henna Törmänen, Matleena Autio, Roni Junttila & Valtteri Nevala.</p>
         </>
     );
 }
