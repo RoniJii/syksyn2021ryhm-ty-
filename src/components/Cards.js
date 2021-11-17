@@ -17,13 +17,13 @@ function Cards() {
               src={Kuva3}
               text='Kahvipapuja halavalla'
               label='TARJOUS!'
-              path='/Product'
+              path='/Products'
             />
             <CardItem
               src={Kuva5}
               text='Jouluiset kahvit ja teet ovat saapuneet valikoimaamme!'
               label='UUTTA!'
-              path='/Product'
+              path='/Products'
             />
           </ul>
           <ul className='cards__items'>
@@ -31,19 +31,19 @@ function Cards() {
               src={Kuva1}
               text='Tutustu ja ihastu laadukkaaseen kahvivalikoimaamme!'
               label='KAHVI'
-              path='/Product'
+              path='/Products'
             />
             <CardItem
               src={Kuva2}
               text='Tutustu ja ihastu monipuoliseen teevalikoimaamme!'
               label='TEE'
-              path='/Product'
+              path='/Products'
             />
             <CardItem
               src={Kuva2}
               text='Meiltä löydät myös kahvin ja teen valmistukseen tarvittavat välineet!'
               label='OHEISTUOTTEET'
-              path='/Product'
+              path='/Products'
             />
           </ul>
         </div>

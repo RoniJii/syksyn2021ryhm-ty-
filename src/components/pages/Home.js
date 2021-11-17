@@ -4,7 +4,7 @@ import Karuselli from '../Karuselli';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import Products from './Product';
+import Products from './Products';
 import { Link } from 'react-router-dom';
 
 ///urlin tuonti ei toimi edelleenkään..
@@ -38,7 +38,7 @@ export default function Home({url, category, addToCart}) {
             <div key={product.id}>
                 <Link
                  to={{
-                    pathname: '/product',
+                    pathname: '/products',
                     state: {
                       id: product.id,
                       name: product.name,

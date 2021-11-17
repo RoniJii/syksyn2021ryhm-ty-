@@ -8,7 +8,7 @@ import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Order from './Order';
 import { Switch, Route, useLocation } from 'react-router-dom'
-import Product from './components/pages/Product';
+import Products from './components/pages/Products';
 
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -30,7 +30,7 @@ export default function App() {
 
 
 
-          } else if (location.pathname==="/product") {
+          } else if (location.pathname==="/products") {
             setProduct({id: location.state.id, name: location.state.name});
 
            
@@ -96,9 +96,9 @@ export default function App() {
                 exact
             />
             <Route
-            path="/product"
+            path="/products"
             render= {()=>
-            <Product
+            <Products
             URL={URL}
             product={product}
             />
@@ -107,7 +107,7 @@ export default function App() {
             
             />
 
-            <Route path='/product' component={Product} />
+            <Route path='/products' component={Products} />
             <Route path='/contact' component={Contact} />
             <Route path='/sign-up' component={SignUp} />
 
