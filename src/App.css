@@ -16,3 +16,16 @@ width:18rem;
 
 }
 
+/* Tuotteet -sivun tyylimäärittelyt */
+
+/* Ota yhteyttä -sivun tyylimäärittelyt */
+.contact {
+  /*background-image: url('/images/img-2.jpg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* Kirjaudu sisään -sivun tyylimäärittelyt */

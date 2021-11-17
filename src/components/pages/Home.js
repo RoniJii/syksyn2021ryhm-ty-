@@ -1,5 +1,7 @@
 import React from 'react'
-import {useEffect, useState} from 'react';
+import Cards from '../Cards';
+import Karuselli from '../Karuselli';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -28,8 +30,8 @@ export default function Home({url, category, addToCart}) {
     }, [category, url])
 
     return (
-        <div style={{marginTop: '160px'}}>
-        <h3>Products for {category?.name}</h3>
+        <div style={{marginTop: '100px'}}>
+        <h3>{category?.name}</h3>
         {products.map(product => (
             <div key={uuidv4()}>
                 <p>{product.name}</p>
@@ -39,6 +41,8 @@ export default function Home({url, category, addToCart}) {
                 </div> */}
             </div>
         ))}
-    </div>
+        <Karuselli/>
+        <Cards/>
+        </div>
     )
 }

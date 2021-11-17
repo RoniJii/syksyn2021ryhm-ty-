@@ -34,10 +34,10 @@ export default function Navbar({url, setCategory, cart}) {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li>
-            <Link className="navbar-brand" to="/Home"><img className= "nav-logo" src={Logo} style={{ maxHeight: '70px'}}></img></Link>
+            <Link className="navbar-brand" to="/"><img className= "nav-logo" src={Logo} style={{ maxHeight: '70px'}}></img></Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/Home">ETUSIVU</Link>
+              <Link className="nav-link" aria-current="page" to="/">ETUSIVU</Link>
             </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="/" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">TUOTTEET</Link>
