@@ -4,11 +4,11 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState }  from 'react';
 import Home from './components/pages/Home';
-import Products from './components/pages/Products';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Order from './Order';
 import { Switch, Route, useLocation } from 'react-router-dom'
+import Products from './components/pages/Products';
 
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -18,12 +18,24 @@ export default function App() {
     const [category, setCategory] = useState(null);
 /*     const [searchPhrase, setSeachPhrase] = useState(''); */
     const [cart, setCart] = useState([]); 
+    const [product,setProduct] = useState(null);
 
     let location = useLocation();
 
     useEffect(() => {
         if (location.state !==undefined) {
+
+          if (location.pathname==="/") {
             setCategory({id: location.state.id, name: location.state.name});
+
+
+
+          } else if (location.pathname==="/products") {
+            setProduct({id: location.state.id, name: location.state.name});
+
+           
+          }
+            
         
         }
     }, [location.state])
@@ -82,6 +94,18 @@ export default function App() {
                   addToCart={addToCart}
                 />}
                 exact
+            />
+            <Route
+            path="/products"
+            render= {()=>
+            <Products
+            URL={URL}
+            product={product}
+            addToCart= {addToCart}
+            />
+            }
+            
+            
             />
 
             <Route path='/products' component={Products} />
