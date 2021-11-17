@@ -4,6 +4,9 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState }  from 'react';
 import Home from './components/pages/Home';
+import Products from './components/pages/Products';
+import Contact from './components/pages/Contact';
+import SignUp from './components/pages/SignUp';
 import Order from './Order';
 import { Switch, Route, useLocation } from 'react-router-dom'
 
@@ -66,20 +69,25 @@ export default function App() {
       }
   */
     return (
-        <>
-          <Navibar url={URL} cart={cart} setCategory={setCategory}/>
+      <>
+        <Navibar url={URL} cart={cart} setCategory={setCategory}/>
 {/*           <Header search={search}/> */}
-          <div id="content" className="container-fluid">
+        <div id="content" className="container-fluid">
           <Switch>
             <Route
-                path="/" render={() =>
-                    <Home
-                        URL={URL}
-                        category={category}
-                        addToCart={addToCart}
-                      />}
-                      exact
+              path="/" render={() =>
+                <Home
+                  URL={URL}
+                  category={category}
+                  addToCart={addToCart}
+                />}
+                exact
             />
+
+            <Route path='/products' component={Products} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/sign-up' component={SignUp} />
+
             <Route path="/order" render={() => 
               <Order url={URL} 
                 URL={URL}
@@ -88,9 +96,9 @@ export default function App() {
                 removeFromCart={removeFromCart} />} 
               /> 
           </Switch>
-          <Footer/>
-          </div> 
-        </>
+        </div>
+        <Footer/> 
+      </>
     )
 }
  
