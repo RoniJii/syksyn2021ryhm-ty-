@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import { Form } from 'react-bootstrap';
 
-export default function SingUp() {
+export default function SignUp() {
   return(
     <>
       <Form>

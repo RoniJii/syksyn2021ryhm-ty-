@@ -3,5 +3,7 @@ import '../../App.css';
 
 
 export default function Products() {
-    return <h1 className='products'>Tuotteemme</h1>;
+    return (
+        <h1 className='products'>Tuotteemme</h1>
+    ); 
 }
