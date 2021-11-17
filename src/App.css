@@ -7,14 +7,13 @@ vihertävä #3C3A1E
 tumma ruskea (esim teksteihin) #31231D
 */
 
-.App {
-  text-align: center;
+.container-fluid {
+  width: 100%;
+  background-color: #E3DECA;
+  color: #31231D;
 }
 
-.card {
-width:18rem;
 
-}
 
 /* Tuotteet -sivun tyylimäärittelyt */
 
@@ -34,7 +33,9 @@ width:18rem;
   background-repeat: no-repeat;
   color: snow;
   font-size: 100px;
+  margin-bottom: 40px;
 }
+
 
 
 

@@ -2,12 +2,6 @@ import React from 'react';
 import '../../App.css';
 
 
-<<<<<<< HEAD
-export default function Products() {
-    return (
-        <h1 className='products'>Tuotteemme</h1>
-    ); 
-=======
 export default function Products({product,addToCart}) {
     return (
 <div style={{'padding-top': '100px'}}>
@@ -18,5 +12,4 @@ export default function Products({product,addToCart}) {
 
 
     )
->>>>>>> aff4af00d29bc713dc8de0da2f48a1af25d6d1f6
 }

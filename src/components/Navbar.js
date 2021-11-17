@@ -66,11 +66,6 @@ export default function Navbar({url, setCategory, cart}) {
               <Link className="nav-link" aria-current="page" to="/SignUp">KIRJAUDU SISÄÄN</Link>
             </li>
           </ul>
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <Cart cart={cart}/>
-            </li>
-          </ul>
           <Form className="d-flex">
             <FormControl
               type="search"
@@ -79,7 +74,12 @@ export default function Navbar({url, setCategory, cart}) {
               aria-label="Search"
             />
             <Button variant="outline-success">Hae</Button>
-          </Form> 
+          </Form>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Cart cart={cart}/>
+            </li>
+          </ul> 
         </div>
       </div>
     </nav>
