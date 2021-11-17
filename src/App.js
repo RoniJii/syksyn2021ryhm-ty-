@@ -4,7 +4,6 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState }  from 'react';
 import Home from './components/pages/Home';
-import Products from './components/pages/Products';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Order from './Order';
@@ -108,7 +107,7 @@ export default function App() {
             
             />
 
-            <Route path='/products' component={Products} />
+            <Route path='/product' component={Product} />
             <Route path='/contact' component={Contact} />
             <Route path='/sign-up' component={SignUp} />
 
