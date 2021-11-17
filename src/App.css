@@ -40,3 +40,10 @@ tumma ruskea (esim teksteihin) #31231D
 
 
 /* Kirjaudu sisään -sivun tyylimäärittelyt */
+
+.sign-up {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  
+}
