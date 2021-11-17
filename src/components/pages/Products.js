@@ -1,5 +1,24 @@
 import React from 'react';
 import '../../App.css';
+import kahvi1 from '../images/Tuotekuvat/Kahvi1.jpg';
+import kahvi2 from '../images/Tuotekuvat/Kahvi2.jpg';
+import kahvi3 from '../images/Tuotekuvat/Kahvi3.jpg';
+import kahvi4 from '../images/Tuotekuvat/Kahvi4.jpg';
+import kahvi5 from '../images/Tuotekuvat/Kahvi5.jpg';
+import tee1 from '../images/Tuotekuvat/Tee1.jpg';
+import tee2 from '../images/Tuotekuvat/Tee2.jpg';
+import tee3 from '../images/Tuotekuvat/Tee3.jpg';
+import tee4 from '../images/Tuotekuvat/Tee4.jpg';
+import tee5 from '../images/Tuotekuvat/Tee5.jpg';
+import tee6 from '../images/Tuotekuvat/Tee6.jpg';
+import tee7 from '../images/Tuotekuvat/Tee7.jpg';
+import kahvimylly1 from '../images/Tuotekuvat/Kahvimylly1.jpg';
+import kahvimylly2 from '../images/Tuotekuvat/Kahvimylly2.jpg';
+
+
+
+
+
 
 const Tuotteet = [
 {category: 'Kahvi', price: '10€', stocked: true, name:'Joulukahvi'},
