@@ -25,7 +25,7 @@ export default function App() {
     useEffect(() => {
         if (location.state !==undefined) {
 
-          if (location.pathname="/") {
+          if (location.pathname==="/") {
             setCategory({id: location.state.id, name: location.state.name});
 
 
@@ -101,6 +101,7 @@ export default function App() {
             <Products
             URL={URL}
             product={product}
+            addToCart= {addToCart}
             />
             }
             
