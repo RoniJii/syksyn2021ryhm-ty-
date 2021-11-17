@@ -6,6 +6,7 @@ import { useEffect, useState }  from 'react';
 import Home from './components/pages/Home';
 import Order from './Order';
 import { Switch, Route, useLocation } from 'react-router-dom'
+import Product from './components/pages/Product';
 
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -15,12 +16,24 @@ export default function App() {
     const [category, setCategory] = useState(null);
 /*     const [searchPhrase, setSeachPhrase] = useState(''); */
     const [cart, setCart] = useState([]); 
+    const [product,setProduct] = useState(null);
 
     let location = useLocation();
 
     useEffect(() => {
         if (location.state !==undefined) {
+
+          if (location.pathname="/") {
             setCategory({id: location.state.id, name: location.state.name});
+
+
+
+          } else if (location.pathname==="/product") {
+            setProduct({id: location.state.id, name: location.state.name});
+
+           
+          }
+            
         
         }
     }, [location.state])
@@ -79,6 +92,17 @@ export default function App() {
                         addToCart={addToCart}
                       />}
                       exact
+            />
+            <Route
+            path="/product"
+            render= {()=>
+            <Product
+            URL={URL}
+            product={product}
+            />
+            }
+            
+            
             />
             <Route path="/order" render={() => 
               <Order url={URL} 
