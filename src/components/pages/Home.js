@@ -47,7 +47,9 @@ export default function Home({url, category, addToCart}) {
                 }}
                 >
                 {product.name}
+
                 </Link>
+                <img src= {url + 'images/kahvi12'} alt={product.name}/>
                  <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
                
             </div>
