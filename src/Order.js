@@ -2,7 +2,7 @@ import {useState, useEffect, createRef} from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from "react-router-dom";
 
-export default function Order({url, category, cart, removeFromCart, updateAmount}) {
+export default function Order({url, category, cart, removeFromCart, updateAmount, emptyCart}) {
     //const [firstname, setFirstname] = useState("");
     //const [lastname, setLastname] = useState("");
     //const [address, setAddress] = useState("");
@@ -45,6 +45,7 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
                                     onChange={e => changeAmount(e,product,index)}
                                     value={product.amount}/></td> 
                                 <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
+                                <td><Link to="/#" onClick={() => emptyCart()}>Empty</Link></td>
                             </tr>
                         )
                 })}

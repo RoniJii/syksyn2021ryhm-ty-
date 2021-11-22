@@ -1,42 +1,44 @@
 import React from 'react';
 import './footer.css';
 import Logo from './logo.png';
+import { Link } from 'react-router-dom';
+
 
 export default function footer() {
-  return (
-    <div className='container-fluid'>
-      <section className='footer-links'>
-        <div className='footer-link-wrapper row'>
-          <div className='footer-link-items col-sm-12 col-md-3'>
+    return (
+      <div className='container-fluid'>
+        <div className='footer-links'>
+          <div className='footer-link-wrapper'>
+            <div className='footer-link-items'>
             <figure>
-              <img className= 'footer-logo' src={Logo} style={{ maxHeight: '130px'}}></img>
-            </figure>
-          </div>
-          <div className='footer-link-items col-sm-12 col-md-3'>
+                <img className='logo' src={Logo} style={{ maxHeight: '130px'}}></img>
+              </figure>
+            </div>
+            <div className='footer-link-items'>
             <h6>TUOTTEEMME</h6>
-            <a href='/'>Kahvit</a>
-            <a href='/'>Teet</a>
-            <a href='/'>Oheistuotteet</a>
+              <Link to='/Products'>Kahvit</Link>
+              <Link to='/Products'>Teet</Link>
+              <Link to='/Products'>Oheistuotteet</Link>
+            </div>
           </div>
-          <div className='footer-link-items col-sm-12 col-md-3'>
+          <div className='footer-link-wrapper'>
+            <div className='footer-link-items'>
             <h6>OTA YHTEYTTÄ</h6>
-            <p>Yhteystiedot tähän</p>
-          </div>
-          <div className='footer-link-items col-sm-12 col-md-3'>
-            <h6>SEURAA MEITÄ</h6>
-            <a href='/'><i class='fab fa-instagram'/> Instagram</a>
-            <a href='/'><i class='fab fa-facebook-f'/> Facebook</a>
-            <a href='/'><i class='fab fa-youtube'/> Youtube</a>
+              <p>Yhteystiedot</p>
+            </div>
+            <div className='footer-link-items'>
+              <h6>SEURAA MEITÄ</h6>
+              <Link to='/'> <i class='fab fa-instagram' /> Instagram</Link>
+              <Link to='/'> <i class='fab fa-facebook-f' /> Facebook</Link>
+              <Link to='/'> <i class='fab fa-youtube' /> Youtube</Link>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section className='rights col-sm-12 col-md-12'>
-        <div className='text-center'>
-          <hr/>
+        <div className='rights'>
+          <hr/> 
           <p>Verkkopalveluprojekti, Ryhmä 10 &copy; 2021</p>
         </div>
-      </section>
-    </div>
-  );
+      </div>
+    );
 }
+

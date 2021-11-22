@@ -76,10 +76,11 @@ export default function App() {
       localStorage.setItem('cart',JSON.stringify(modifiedCart));
       }
 
-/*       function emptyCart() {
-        localStorage.clear()
-      }
-  */
+    function emptyCart() {
+      setCart([]);
+      localStorage.setItem('cart', JSON.stringify([]));
+    }
+    
     return (
       <>
         <Navbar url={URL} cart={cart} setCategory={setCategory}/>
@@ -90,6 +91,7 @@ export default function App() {
               path="/" render={() =>
                 <Home
                   URL={URL}
+                  emptyCart={emptyCart}
                   category={category}
                   addToCart={addToCart}
                 />}

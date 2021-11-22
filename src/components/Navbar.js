@@ -63,7 +63,7 @@ export default function Navbar({url, setCategory, cart}) {
               <Link className="nav-link" aria-current="page" to="/Contact">OTA YHTEYTTÄ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/SignUp">KIRJAUDU SISÄÄN</Link>
+              <Link className="nav-link" aria-current="page" to="/SignUp"><i class="far fa-user"></i></Link>
             </li>
           </ul>
           <Form className="d-flex">

@@ -5,6 +5,7 @@ import Kuva1 from './images/kuva1.png';
 import Kuva2 from './images/kuva2.png';
 import Kuva5 from './images/kuva5.jpg';
 import Kuva3 from './images/Tuotekuvat/Kahvi3.jpg';
+import Kuva10 from './images/kuva10.png';
 
 function Cards() {
   return (
@@ -34,7 +35,7 @@ function Cards() {
               path='/Products'
             />
             <CardItem
-              src={Kuva2}
+              src={Kuva10}
               text='Tutustu ja ihastu monipuoliseen teevalikoimaamme!'
               label='TEE'
               path='/Products'
