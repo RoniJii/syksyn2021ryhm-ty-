@@ -1,5 +1,5 @@
 import './App.css';
-import Navibar from './components/Navbar';
+import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState }  from 'react';
@@ -82,7 +82,7 @@ export default function App() {
   */
     return (
       <>
-        <Navibar url={URL} cart={cart} setCategory={setCategory}/>
+        <Navbar url={URL} cart={cart} setCategory={setCategory}/>
 {/*           <Header search={search}/> */}
         <div id="content" className="container-fluid">
           <Switch>
