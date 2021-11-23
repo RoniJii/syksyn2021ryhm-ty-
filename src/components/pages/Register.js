@@ -1,19 +1,39 @@
 import React from 'react';
 import '../../App.css';
-//import { Form } from 'react-bootstrap';
 
-export default function SignUp() {
+export default function Register() {
   return (
     <>
-      <div className='sign-up'>
+      <div className='register'>
         <div className='form-container'>
           <div className='signup-form'>
+            <label>ETUNIMI</label>
+            <input
+              id='firstname'
+              className='form-field'
+              placeholder='etunimi'
+              name='firstname'
+            />
+            <label>SUKUNIMI</label>
+            <input
+              id='lastname'
+              className='form-field'
+              placeholder='sukunimi'
+              name='lastname'
+            />
             <label>KÄYTTÄJÄTUNNUS</label>
             <input
               id='käyttäjätunnus'
               className='form-field'
               placeholder='käyttäjätunnus'
               name='käyttäjätunnus'
+            />
+            <label>SÄHKÖPOSTI</label>
+            <input
+              id='email'
+              className='form-field'
+              placeholder='sähköposti'
+              name='email'
             />
             <label>SALASANA</label>
             <input
@@ -22,9 +42,6 @@ export default function SignUp() {
               placeholder='salasana'
               name='salasana'
             />
-            <button className='form-field' type='submit'>Kirjaudu sisään</button>
-            <br/>
-            <label>UUSI ASIAKAS?</label>
             <button className='form-field' type='submit'>Rekisteröidy</button>
           </div>
         </div>

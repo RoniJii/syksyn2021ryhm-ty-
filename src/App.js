@@ -112,7 +112,7 @@ export default function App() {
 
             <Route path='/products' component={Products} />
             <Route path='/contact' component={Contact} />
-            <Route path='/sign-up' component={SignUp} />
+            <Route path='/signup' component={SignUp} />
 
             <Route path="/order" render={() => 
               <Order url={URL} 

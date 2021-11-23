@@ -51,13 +51,49 @@ tumma ruskea (esim teksteihin) #31231D
 }
 
 
-
-
 /* Kirjaudu sisään -sivun tyylimäärittelyt */
 
-.sign-up {
+.sign-up, .register {
   width: 100%;
   display: flex;
-  margin-top: 100px;
-  
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url('components/images/kuva11.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: snow;
+  margin-top: 20px;
+} 
+
+.form-container {
+  width: 360px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-field {
+  margin: 10px 0 10px 0;
+  padding: 13px;
+  font-size: 16px;
+  border: 0;
+}
+
+label {
+  letter-spacing: 2px;
+}
+
+input {
+  background: snow;
+}
+
+button {
+  background: #AA6231;
+  color: snow;
+  cursor: pointer;
 }
