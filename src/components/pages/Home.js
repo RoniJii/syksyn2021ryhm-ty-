@@ -4,8 +4,8 @@ import Karuselli from '../Karuselli';
 import '../../App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { v4 as uuidv4 } from 'uuid';
-import Products from './Products';
+//import { v4 as uuidv4 } from 'uuid';
+//import Products from './Products';
 import { Link } from 'react-router-dom';
 
 ///urlin tuonti ei toimi edelleenkään..
