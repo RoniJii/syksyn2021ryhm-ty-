@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 
 ///urlin tuonti ei toimi edelleenkään..
 
+const URL = "http://localhost/syksynprojekti2021/";
+
 export default function Home({url, category, addToCart}) {
     const [products, setProducts] = useState([]);
 
@@ -46,10 +48,11 @@ export default function Home({url, category, addToCart}) {
                     }
                 }}
                 >
-                {product.name}
+               
 
                 </Link>
-                <img src= {url + 'images/kahvi12'} alt={product.name}/>
+                {product.name}
+                <img src= {URL + 'images/kahvi12.jpg'} alt={product.name}/>
                  <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
                
             </div>

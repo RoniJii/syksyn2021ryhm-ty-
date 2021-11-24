@@ -43,7 +43,7 @@ export default function Products({product,url,addToCart}) {
 <div style={{'padding-top': '100px'}}>
 {product?.name}
 <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
-<img src= {url + 'images/kahvi12'} alt={product.name}/>
+
 <p>Our products</p>
 </div>
 
