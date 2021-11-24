@@ -99,6 +99,12 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  button {
+    background: #AA6231;
+    color: snow;
+    cursor: pointer;
+  }
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
