@@ -6,8 +6,9 @@ import { useEffect, useState }  from 'react';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
+import Register from './components/pages/Register';
 import Order from './Order';
-import { Switch, Route, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom';
 import Products from './components/pages/Products';
 
 
@@ -112,7 +113,8 @@ export default function App() {
 
             <Route path='/products' component={Products} />
             <Route path='/contact' component={Contact} />
-            <Route path='/sign-up' component={SignUp} />
+            <Route path='/signup' component={SignUp} />
+            <Route path='/register' component={Register} />
 
             <Route path="/order" render={() => 
               <Order url={URL} 
