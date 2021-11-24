@@ -16,9 +16,9 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
             <h6>TUOTTEEMME</h6>
-              <Link to='/Products'>Kahvit</Link>
-              <Link to='/Products'>Teet</Link>
-              <Link to='/Products'>Oheistuotteet</Link>
+              <Link to='/Coffee'>Kahvit</Link>
+              <Link to='/Tea'>Teet</Link>
+              <Link to='/Stuff'>Oheistuotteet</Link>
             </div>
           </div>
           <div className='footer-link-wrapper'>
@@ -28,9 +28,9 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
               <h6>SEURAA MEITÄ</h6>
-              <Link to='/'> <i class='fab fa-instagram' /> Instagram</Link>
-              <Link to='/'> <i class='fab fa-facebook-f' /> Facebook</Link>
-              <Link to='/'> <i class='fab fa-youtube' /> Youtube</Link>
+              <Link to='/Contact'> <i class='fab fa-instagram' /> Instagram</Link>
+              <Link to='/Contact'> <i class='fab fa-facebook-f' /> Facebook</Link>
+              <Link to='/Contact'> <i class='fab fa-youtube' /> Youtube</Link>
             </div>
           </div>
         </div>

@@ -3,13 +3,16 @@ import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState }  from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
-import { Switch, Route, useLocation } from 'react-router-dom';
 import Products from './components/pages/Products';
+import Coffee from './components/pages/Coffee';
+import Tea from './components/pages/Tea';
+import Stuff from './components/pages/Stuff';
 
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -115,6 +118,9 @@ export default function App() {
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
+            <Route path='/coffee' component={Coffee} />
+            <Route path='/tea' component={Tea} />
+            <Route path='/stuff' component={Stuff} />
 
             <Route path="/order" render={() => 
               <Order url={URL} 
