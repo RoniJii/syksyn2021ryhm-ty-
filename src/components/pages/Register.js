@@ -6,7 +6,7 @@ export default function Register() {
     <>
       <div className='register'>
         <form className='form-container'>
-          <div className='register-form'>
+          <div className='signup-form'>
             <label>ETUNIMI</label>
             <input
               id='firstName'
