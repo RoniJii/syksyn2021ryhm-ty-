@@ -68,7 +68,7 @@ tumma ruskea (esim teksteihin) #31231D
 } 
 
 .register {
-  height: 120vh;
+  height: 115vh;
 }
 
 .form-container {
@@ -76,7 +76,7 @@ tumma ruskea (esim teksteihin) #31231D
 }
 
 h2 {
-  padding: 20px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 
 .signup-form {
