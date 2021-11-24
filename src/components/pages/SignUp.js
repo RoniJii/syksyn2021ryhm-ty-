@@ -24,9 +24,14 @@ export default function SignUp() {
 
   const history = useHistory();
 
+  const goShopping = () => {
+    let path = '/Products'
+    history.push(path);
+    }
+
   const registerPage = () => {
-  let path = '/Register'
-  history.push(path);
+    let path = '/Register'
+    history.push(path);
   }
 
   return (
@@ -53,7 +58,10 @@ export default function SignUp() {
               placeholder='salasana'
               name='password'
             />
-            <button className='form-field' type='submit'>Kirjaudu sisään</button>
+            <button className='form-field' type='submit'
+              onClick={goShopping}>
+              Kirjaudu sisään
+            </button>
             <br/>
             <label>UUSI ASIAKAS?</label>
             <button className='form-field' type='submit'
