@@ -55,6 +55,9 @@ export default function Home({url, category, addToCart}) {
                 <figure>
                 <img src= {URL + 'images/kahvi12.jpg' }style={{ maxHeight: '150px'} }  alt={product.name}/>
                 </figure>
+                
+                <img className="img-fluid" src= {URL + 'images/kahvi8.jpg' }style={{ maxHeight: '150px'} }  alt={product.name}/>
+               
                  <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
                
             </div>

@@ -10,7 +10,7 @@ import Kuva10 from './images/kuva10.png';
 function Cards() {
   return (
     <div className='cards'>
-      <h3>Löydät monipuolisesta valikoimastamme erilaisia kahveja, teetä ja oheistuotteita.</h3>
+      <h3 className="teksti1">Löydät monipuolisesta valikoimastamme erilaisia kahveja, teetä ja oheistuotteita.</h3>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
