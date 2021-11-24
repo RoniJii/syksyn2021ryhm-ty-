@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import kahvi1 from '../images/Tuotekuvat/Kahvi1.jpg';
+/* import kahvi1 from '../images/Tuotekuvat/Kahvi1.jpg';
 import kahvi2 from '../images/Tuotekuvat/Kahvi2.jpg';
 import kahvi3 from '../images/Tuotekuvat/Kahvi3.jpg';
 import kahvi4 from '../images/Tuotekuvat/Kahvi4.jpg';
@@ -13,11 +13,7 @@ import tee5 from '../images/Tuotekuvat/Tee5.jpg';
 import tee6 from '../images/Tuotekuvat/Tee6.jpg';
 import tee7 from '../images/Tuotekuvat/Tee7.jpg';
 import kahvimylly1 from '../images/Tuotekuvat/Kahvimylly1.jpg';
-import kahvimylly2 from '../images/Tuotekuvat/Kahvimylly2.jpg';
-
-
-
-
+import kahvimylly2 from '../images/Tuotekuvat/Kahvimylly2.jpg'; */
 
 
 const Tuotteet = [
@@ -36,20 +32,28 @@ const Tuotteet = [
 {category: 'Muut', price: '20€', stocked: true, name:'Tavallinen kahvimylly'},
 {category: 'Muut', price: '25€', stocked: true, name:'Sähkökahvimylly'}
 ];
+
 const URL = "http://localhost/syksynprojekti2021/";
 
 export default function Products({product,url,addToCart}) {
     return (
-<div style={{'padding-top': '100px'}}>
-{product?.name}
-<figure>
+            <>
+            <h1 className='products'>KAFFIA - COFFEE AND MORE</h1>
+            <div>
+                {product?.name}
+                <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+            </div>
+            <figure>
                 <img src= {URL + 'images/kahvi12.jpg' }style={{ maxHeight: '150px'} }  alt={product?.name}/>
-                </figure>
-<button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+            </figure>
+                <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+            </>
+        );
 
-<p>Our products</p>
-</div>
 
 
-    )
+
+
+
+
 }
