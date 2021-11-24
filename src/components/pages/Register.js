@@ -5,28 +5,28 @@ export default function Register() {
   return (
     <>
       <div className='register'>
-        <div className='form-container'>
-          <div className='signup-form'>
+        <form className='form-container'>
+          <div className='register-form'>
             <label>ETUNIMI</label>
             <input
-              id='firstname'
+              id='firstName'
               className='form-field'
               placeholder='etunimi'
-              name='firstname'
+              name='firstName'
             />
             <label>SUKUNIMI</label>
             <input
-              id='lastname'
+              id='lastName'
               className='form-field'
               placeholder='sukunimi'
-              name='lastname'
+              name='lastName'
             />
             <label>KÄYTTÄJÄTUNNUS</label>
             <input
-              id='käyttäjätunnus'
+              id='userName'
               className='form-field'
               placeholder='käyttäjätunnus'
-              name='käyttäjätunnus'
+              name='userName'
             />
             <label>SÄHKÖPOSTI</label>
             <input
@@ -37,14 +37,14 @@ export default function Register() {
             />
             <label>SALASANA</label>
             <input
-              id='salasana'
+              id='password'
               className='form-field'
               placeholder='salasana'
-              name='salasana'
+              name='password'
             />
             <button className='form-field' type='submit'>Rekisteröidy</button>
           </div>
-        </div>
+        </form>
       </div>
     </>   
   );
