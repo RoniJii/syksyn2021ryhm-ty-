@@ -14,7 +14,7 @@ export default function SignUp() {
     setValues({...values, id: e.target.value})
   }
 
-  const handlePasswordInputChange = (e) => {
+  const handlePassWordInputChange = (e) => {
     setValues({...values, password: e.target.value})
   }
 
@@ -32,8 +32,9 @@ export default function SignUp() {
   return (
     <>
       <div className='sign-up'>
-        <div className='form-container'>
-          <form className='signup-form' onSubmit={handleSubmit}>
+        <form className='form-container'>
+          <div className='signup-form' onSubmit={handleSubmit}>
+            <h2>Kirjaudu sisään</h2>
             <label>KÄYTTÄJÄTUNNUS</label>
             <input
               onChange={handleIdInputChange}
@@ -45,7 +46,7 @@ export default function SignUp() {
             />
             <label>SALASANA</label>
             <input
-              onChange={handlePasswordInputChange}
+              onChange={handlePassWordInputChange}
               value={values.password}
               id='password'
               className='form-field'
@@ -59,8 +60,8 @@ export default function SignUp() {
               onClick={registerPage}>
               Rekisteröidy
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </>   
   );
