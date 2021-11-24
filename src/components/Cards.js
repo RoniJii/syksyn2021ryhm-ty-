@@ -32,19 +32,19 @@ function Cards() {
               src={Kuva1}
               text='Tutustu ja ihastu laadukkaaseen kahvivalikoimaamme!'
               label='KAHVI'
-              path='/Products'
+              path='/Coffee'
             />
             <CardItem
               src={Kuva10}
               text='Tutustu ja ihastu monipuoliseen teevalikoimaamme!'
               label='TEE'
-              path='/Products'
+              path='/Tea'
             />
             <CardItem
               src={Kuva2}
               text='Meiltä löydät myös kahvin ja teen valmistukseen tarvittavat välineet!'
               label='OHEISTUOTTEET'
-              path='/Products'
+              path='/Stuff'
             />
           </ul>
         </div>
