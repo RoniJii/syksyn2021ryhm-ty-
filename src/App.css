@@ -111,3 +111,8 @@ button {
   color: snow;
   cursor: pointer;
 }
+
+figure {
+display: inline-block;
+
+}
