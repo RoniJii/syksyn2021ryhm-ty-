@@ -36,12 +36,15 @@ const Tuotteet = [
 {category: 'Muut', price: '20€', stocked: true, name:'Tavallinen kahvimylly'},
 {category: 'Muut', price: '25€', stocked: true, name:'Sähkökahvimylly'}
 ];
-
+const URL = "http://localhost/syksynprojekti2021/";
 
 export default function Products({product,url,addToCart}) {
     return (
 <div style={{'padding-top': '100px'}}>
 {product?.name}
+<figure>
+                <img src= {URL + 'images/kahvi12.jpg' }style={{ maxHeight: '150px'} }  alt={product?.name}/>
+                </figure>
 <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
 
 <p>Our products</p>
