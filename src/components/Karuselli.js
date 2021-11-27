@@ -1,38 +1,35 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Kuva3 from './images/kuva3.jpg';
-import Kuva5 from './images/kuva5.jpg';
-import Kuva6 from './images/kuva6.jpg';
+import '../App.css';
+import Karuselli1 from './images/karuselli1.png';
+import Karuselli2 from './images/karuselli2.png';
+import Karuselli3 from './images/karuselli3.png';
 
 export default function Karuselli() {
     return (
-        <div>
+        <div className='carousel'>
             <Carousel>
                 <Carousel.Item>
-                    <img width={900} height={620}
+                    <img height={500}
                     className="d-block w-100"
-                    src={Kuva6}
+                    src={Karuselli1}
                     alt="First slide"
                     />
-                    <Carousel.Caption>
-                    <h3>Voit nyt tilata Woltin kautta tuotteita tai hakea paikan päältä. Tervetuloa!</h3>
-                    </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width={900} height={620}
+                    <img height={500}
                     className="d-block w-100"
-                    src={Kuva5}
+                    src={Karuselli2}
                     alt="Second slide"
                     />
-
-                    <Carousel.Caption>
-                    <h3> Joulun sesonkituotteet ovat nyt saapuneet! Löydät täältä jouluisia makuja!</h3>
+                <Carousel.Caption>
+                    <h3> Joulun sesonkituotteet ovat nyt saapuneet!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width={900} height={620}
+                    <img height={500}
                     className="d-block w-100"
-                    src={Kuva3}
+                    src={Karuselli3}
                     alt="Third slide"
                     />
 

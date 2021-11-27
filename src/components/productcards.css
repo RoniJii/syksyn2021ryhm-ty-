@@ -81,7 +81,11 @@ h3 {
     color: snow;
     border: none;
 }
-  
+
+.btn:hover {
+    background: #3C3A1E;
+    color: snow;
+}
 
   
 @media only screen and (min-width: 1200px) {
