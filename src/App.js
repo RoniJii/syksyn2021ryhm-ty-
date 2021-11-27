@@ -13,7 +13,7 @@ import Products from './components/pages/Products';
 import Coffee from './components/pages/Coffee';
 import Tea from './components/pages/Tea';
 import Stuff from './components/pages/Stuff';
-
+import Admin from './components/Admin';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
@@ -121,6 +121,7 @@ export default function App() {
             <Route path='/coffee' component={Coffee} />
             <Route path='/tea' component={Tea} />
             <Route path='/stuff' component={Stuff} />
+            <Route path="/Admin" render={() => <Admin/>}/>
 
             <Route path="/order" render={() => 
               <Order url={URL} 
