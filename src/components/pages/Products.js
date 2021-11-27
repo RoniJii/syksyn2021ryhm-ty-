@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../App.css';
+import CardItem from '../CardItem';
+
 /* import kahvi1 from '../images/Tuotekuvat/Kahvi1.jpg';
 import kahvi2 from '../images/Tuotekuvat/Kahvi2.jpg';
 import kahvi3 from '../images/Tuotekuvat/Kahvi3.jpg';
@@ -38,22 +40,50 @@ const URL = "http://localhost/syksynprojekti2021/";
 export default function Products({product,url,addToCart}) {
     return (
             <>
-            <h1 className='products'>Tuotteemme</h1>
-            <div>
-                {product?.name}
+                <h1 className='products'>Tuotteemme</h1>
+                <div>
+                    {product?.name}
+                    <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+                </div>
+                <figure>
+                    <img src= {URL + 'images/kahvi12.jpg' } style={{ maxHeight: '150px'} }  alt={product?.name}/>
+                </figure>
                 <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
-            </div>
-            <figure>
-                <img src= {URL + 'images/kahvi12.jpg' } style={{ maxHeight: '150px'} }  alt={product?.name}/>
-            </figure>
-                <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+                
+                <div className='cards'>
+                <div className='cards__container'>
+                    <div className='cards__wrapper'>
+                    <ul className='cards__items'>
+                        <CardItem
+                        //src={}
+                        text='Jouluiset kahvit ovat saapuneet verkkokauppaamme. Hemmoittele itseäsi tai anna lahjaksi.'
+                        label='UUTTA!'
+                        path='/Coffee'
+                        />
+                        <CardItem
+                        //src={}
+                        text='Herkulliset tee uutuudet ovat saapuneet'
+                        label='UUTTA!'
+                        path='/Tea'
+                        />
+                    </ul>
+                    <ul className='cards__items'>
+                        <CardItem
+                        src={URL + 'images/kahvi12.jpg' } alt={product?.name}
+                        text='Nyt tarjouksessa..........' 
+                        label='TARJOUS!'
+                        path='/Coffee'
+                        />
+                        <CardItem
+                        //src={}
+                        text='Nyt tarjouksessa..........'
+                        label='TARJOUS!'
+                        path='/Tea'
+                        />
+                    </ul>
+                    </div>
+                </div>
+                </div>
             </>
         );
-
-
-
-
-
-
-
 }
