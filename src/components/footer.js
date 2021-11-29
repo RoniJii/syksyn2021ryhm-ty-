@@ -24,7 +24,7 @@ export default function footer() {
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
             <h6>OTA YHTEYTTÄ</h6>
-              <p>Yhteystiedot</p>
+              <p>contact@kaffia.com</p>
             </div>
             <div className='footer-link-items'>
               <h6>SEURAA MEITÄ</h6>
