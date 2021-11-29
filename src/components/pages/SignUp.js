@@ -54,8 +54,7 @@ export default function SignUp() {
           
           <br/>
           <label>UUSI ASIAKAS?</label>
-          <button className='form-field' type='submit'
-            >
+          <button className='form-field' type='submit'>
             Rekisteröidy
           </button>
         </div>

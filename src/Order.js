@@ -34,19 +34,21 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
 
     return (
         <div className='order'>
-            <table style={{marginTop: '160px'}}>
+            <table>
                 <tbody>
+                    <th>Ostoskori</th>
                     {cart.map((product,index) => {
                     //  sum+=parseFloat(product.price);
                             return(
                                 <tr key={uuidv4()}>
                                     <td>{product.name}</td>
                                     <td>{product.price} €</td>
-                                <td><input
+                                    <td><input
                                         style={{width: '60px'}}
                                         type="number" step="1" min="1"
                                         onChange={e => changeAmount(e,product,index)}
-                                        value={product.amount}/></td> 
+                                        value={product.amount}/>
+                                    </td> 
                                     <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
                                     <td><Link to="/#" onClick={() => emptyCart()}>Empty</Link></td>
                                 </tr>
