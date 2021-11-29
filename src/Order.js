@@ -1,6 +1,7 @@
-import { useState, useEffect, createRef } from 'react'
+import { useState, useEffect, createRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from "react-router-dom";
+import './App.css';
 
 export default function Order({url, category, cart, removeFromCart, updateAmount, emptyCart}) {
     //const [firstname, setFirstname] = useState("");
@@ -30,33 +31,36 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
             inputs[inputIndex].current.focus();
         }
     }, [cart, inputs, inputIndex])
+
     return (
-        <table style={{marginTop: '160px'}}>
-            <tbody>
-                {cart.map((product,index) => {
-                //  sum+=parseFloat(product.price);
-                        return(
-                            <tr key={uuidv4()}>
-                                <td>{product.name}</td>
-                                <td>{product.price} €</td>
-                            <td><input
-                                    style={{width: '60px'}}
-                                    type="number" step="1" min="1"
-                                    onChange={e => changeAmount(e,product,index)}
-                                    value={product.amount}/></td> 
-                                <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
-                                <td><Link to="/#" onClick={() => emptyCart()}>Empty</Link></td>
-                            </tr>
-                        )
-                })}
-    {/*             <tr key={uuidv4()}>
-                    <td className="sumrow"></td>
-                    <td className="sumrow">{sum.toFixed(2)}€</td>
-                    <td className="sumrow"></td>
-                    <td className="sumrow"></td>
-                    <td className="sumrow"></td>
-                </tr> */}
-            </tbody>
-        </table>
+        <div className='order'>
+            <table style={{marginTop: '160px'}}>
+                <tbody>
+                    {cart.map((product,index) => {
+                    //  sum+=parseFloat(product.price);
+                            return(
+                                <tr key={uuidv4()}>
+                                    <td>{product.name}</td>
+                                    <td>{product.price} €</td>
+                                <td><input
+                                        style={{width: '60px'}}
+                                        type="number" step="1" min="1"
+                                        onChange={e => changeAmount(e,product,index)}
+                                        value={product.amount}/></td> 
+                                    <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
+                                    <td><Link to="/#" onClick={() => emptyCart()}>Empty</Link></td>
+                                </tr>
+                            )
+                    })}
+        {/*             <tr key={uuidv4()}>
+                        <td className="sumrow"></td>
+                        <td className="sumrow">{sum.toFixed(2)}€</td>
+                        <td className="sumrow"></td>
+                        <td className="sumrow"></td>
+                        <td className="sumrow"></td>
+                    </tr> */}
+                </tbody>
+            </table>
+        </div>
     )
 }
