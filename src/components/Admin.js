@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react'
-import axios from 'axios'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const url = "http://localhost/syksynprojekti2021/"
+const url = "http://localhost/syksynprojekti2021/";
 
 export default function Admin() {
 

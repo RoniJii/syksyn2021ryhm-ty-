@@ -43,12 +43,12 @@ export default function Products({product,url,addToCart}) {
                 <h1 className='products'>Tuotteemme</h1>
                 <div>
                     {product?.name}
-                    <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+                    <button className='btn' type='button' onClick={e => addToCart(product)}>Add</button>
                 </div>
                 <figure>
                     <img src= {URL + 'images/kahvi12.jpg' } style={{ maxHeight: '150px'} }  alt={product?.name}/>
                 </figure>
-                <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+                <button className='btn' type='button' onClick={e => addToCart(product)}>Add</button>
                 
                 <div className='cards'>
                 <div className='cards__container'>

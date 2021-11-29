@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import CoffeeCards from '../Coffeecards';
+import CoffeeCards from '../CoffeeCards';
 
 export default function Coffee() {
     return (
