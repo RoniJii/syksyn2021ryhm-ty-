@@ -23,7 +23,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Karamellikahvi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -41,7 +41,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -59,7 +59,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -77,7 +77,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -97,7 +97,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -115,7 +115,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -133,7 +133,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
@@ -151,7 +151,7 @@ function CoffeeCards({product,url,addToCart}) {
                 <div className='card_item_info'>
                   <div className='card_item_text'>
                     <h5>Tuotenimi</h5>
-                    <p>infoa tuotteesta</p>
+                    <p>€</p>
                   </div>
                   <button className='btn' type='button' 
                     onClick={e => addToCart(product)}> Lisää ostoskoriin
