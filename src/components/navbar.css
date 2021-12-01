@@ -20,7 +20,7 @@
 }
 
 .nav-link a:hover {
-    color:#DDA35D;
+    color:#DDA35D !important;
 }
 
 .navbar-toggler {
@@ -29,4 +29,5 @@
 
 Form {
     margin-left: 10px;
+
 }

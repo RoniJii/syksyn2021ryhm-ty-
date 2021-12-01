@@ -14,7 +14,6 @@ function TeaCards({url, category, addToCart}) {
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>
-
               <div className='card_item'>
                 <Link className='card_item_link'>
                   <figure className='card_item_pic-wrap'>
@@ -33,7 +32,6 @@ function TeaCards({url, category, addToCart}) {
                   </div>
                 </Link>
               </div>
-              
             </ul>
           </div>
         </div>
