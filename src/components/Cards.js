@@ -18,13 +18,13 @@ function Cards() {
               src={Kuva3}
               text='Kahvipapuja halavalla'
               label='TARJOUS!'
-              path='/Products'
+              path='/Coffee'
             />
             <CardItem
               src={Kuva5}
               text='Jouluiset kahvit ja teet ovat saapuneet valikoimaamme!'
               label='UUTTA!'
-              path='/Products'
+              path='/Coffee'
             />
           </ul>
           <ul className='cards__items'>

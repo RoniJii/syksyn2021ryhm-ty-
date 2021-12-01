@@ -1,6 +1,5 @@
 import React from 'react';
 import './productcards.css';
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const URL = "http://localhost/syksynprojekti2021/";

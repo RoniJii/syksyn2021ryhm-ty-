@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { Link } from "react-router-dom";
-import { Form, FormControl, Button } from 'react-bootstrap';
 import axios from 'axios';
 import Logo from './logo.png';
 import Cart from './Cart';
@@ -34,7 +33,9 @@ export default function Navbar({url, setCategory, cart}) {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li>
-            <Link className="navbar-brand" to="/"><img className= "nav-logo" src={Logo} style={{ maxHeight: '70px'}}></img></Link>
+            <Link className="navbar-brand" to="/">
+              <img className="nav-logo" alt="logo" src={Logo} style={{ maxHeight: '70px'}}></img>
+            </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/">ETUSIVU</Link>
@@ -46,7 +47,7 @@ export default function Navbar({url, setCategory, cart}) {
                   <li key={category.id}>
                     <Link className="dropdown-item"
                       to={{
-                        pathname: '/',
+                        pathname: '/Coffee',
                         state: {
                           id: category.id,
                           name: category.name,
@@ -66,15 +67,6 @@ export default function Navbar({url, setCategory, cart}) {
               <Link className="nav-link" aria-current="page" to="/SignUp"><i class="far fa-user"></i></Link>
             </li>
           </ul>
-          <Form className="d-flex">
-            <FormControl
-              type="search"
-              placeholder="Hae tuotteita"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Hae</Button>
-          </Form>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Cart cart={cart}/>

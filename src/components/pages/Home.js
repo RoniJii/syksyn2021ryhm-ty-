@@ -57,7 +57,7 @@ export default function Home({url, category, addToCart}) {
                 </figure>
                 
                
-                 <button className='btn btn-dark' type='button' onClick={e => addToCart(product)}>Add</button>
+                 <button className='btn' type='button' onClick={e => addToCart(product)}>Add</button>
                
             </div>
         ))} */}
