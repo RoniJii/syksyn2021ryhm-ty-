@@ -9,7 +9,6 @@ import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
-import Products from './components/pages/Products';
 import Coffee from './components/pages/Coffee';
 import Tea from './components/pages/Tea';
 import Stuff from './components/pages/Stuff';
@@ -101,20 +100,6 @@ export default function App() {
                 />}
                 exact
             />
-            <Route
-            path="/products"
-            render= {()=>
-            <Products
-            URL={URL}
-            product={product}
-            addToCart= {addToCart}
-            />
-            }
-            
-            
-            />
-
-            <Route path='/products' component={Products} />
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
