@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
-function CoffeeCards({product,url,addToCart}) {
+function CoffeeCards({url, category, addToCart}) {
+  
 
   return (
     <>
@@ -17,16 +18,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi12.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Karamellikahvi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -35,16 +36,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi2.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi2.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -53,16 +54,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi3.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi3.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -71,16 +72,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi5.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi5.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -91,16 +92,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi7.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi7.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -109,16 +110,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi8.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvi8.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -127,16 +128,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img img-'
-                    src= {URL + 'images/Kahvi101.jpg'}  alt={product?.name}
+                    src= {URL + 'images/Kahvi101.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>
@@ -145,16 +146,16 @@ function CoffeeCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/Kahvi100.jpg'}  alt={product?.name}
+                    src= {URL + 'images/Kahvi100.jpg'}  //alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
                   <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
+                    <h5></h5>
                     <p>€</p>
                   </div>
                   <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                    onClick={e => addToCart()}> Lisää ostoskoriin
                   </button>
                 </div>
               </Link>

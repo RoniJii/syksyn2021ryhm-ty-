@@ -11,7 +11,7 @@ export default function footer() {
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
             <figure>
-                <img className='logo' src={Logo} style={{ maxHeight: '130px'}}></img>
+                <img className='logo' alt='logo' src={Logo} style={{ maxHeight: '130px'}}></img>
               </figure>
             </div>
             <div className='footer-link-items'>

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
+
 .cards {
     padding: 4rem;
     background: #E3DECA;
+}
+
+h1 {
+    font-family: 'Gelasio', serif;
 }
   
 h3 {

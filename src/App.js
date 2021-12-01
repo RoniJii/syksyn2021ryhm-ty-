@@ -30,16 +30,9 @@ export default function App() {
 
           if (location.pathname==="/") {
             setCategory({id: location.state.id, name: location.state.name});
-
-
-
-          } else if (location.pathname==="/products") {
+          } else if (location.pathname==="/Coffee") {
             setProduct({id: location.state.id, name: location.state.name});
-
-           
           }
-            
-        
         }
     }, [location.state])
 

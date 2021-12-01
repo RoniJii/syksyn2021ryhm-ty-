@@ -35,7 +35,7 @@ export default function Home({url, category, addToCart}) {
 
     return (
         <div className='container-fluid' style={{marginTop: '100px'}}>
-        {/* <h3>{category?.name}</h3>
+        <h3>{category?.name}</h3>
         {products.map(product => (
             <div key={product.id}>
                 <Link
@@ -59,7 +59,7 @@ export default function Home({url, category, addToCart}) {
                  <button className='btn' type='button' onClick={e => addToCart(product)}>Add</button>
                
             </div>
-        ))} */}
+        ))}
         <Karuselli/>
         <Cards/>
         </div>
