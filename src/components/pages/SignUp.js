@@ -38,7 +38,7 @@ export default function SignUp() {
     setAuth(true);
   }
 
-  if(!auth){
+  if (!auth) {
     return (
       <div className='sign-up'>
       <form onSubmit={ e => loginUser(e,username,password,setAuth,setUsername,setPassword)} className='form-container'>
@@ -61,7 +61,7 @@ export default function SignUp() {
       </form>
     </div>
     );
-  }else{
+  } else {
     return <Resource auth={setAuth} username={setUsername}/>;  
   }
   
@@ -91,10 +91,10 @@ function Resource(props){
     props.auth(false);
   }
 
-  return(
+  return (
     <div style={{marginTop: '150px'}}>
       <p>Logged in as: {content}</p>
-      <button className='btn btn-dark' type='button' onClick={logout}>Logout</button>
+      <button className='btn' type='button' onClick={logout}>Logout</button>
     </div>
   );
 }

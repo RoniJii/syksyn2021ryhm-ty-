@@ -40,7 +40,7 @@ export default function Register() {
   const history = useHistory();
 
   const goShopping = () => {
-    let path = '/Products'
+    let path = '/Coffee'
     history.push(path);
   }
 
