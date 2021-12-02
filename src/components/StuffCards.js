@@ -16,7 +16,25 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/Kahvimylly1.jpg'}  alt={product?.name}
+                  />
+                </figure>
+                <div className='card_item_info'>
+                  <div className='card_item_text'>
+                    <h5>Kahvimylly</h5>
+                    <p>€</p>
+                  </div>
+                  <button className='btn' type='button' 
+                    onClick={e => addToCart(product)}> Lisää ostoskoriin
+                  </button>
+                </div>
+              </Link>
+            </div>
+            <div className='card_item'>
+              <Link className='card_item_link'>
+                <figure className='card_item_pic-wrap'>
+                  <img className='card_item_img'
+                    src= {URL + 'images/Kahvimylly2.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
@@ -34,7 +52,7 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/kahvimuki.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
@@ -52,25 +70,7 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>Tuotenimi</h5>
-                    <p>€</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/teekannu.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
@@ -90,7 +90,7 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/teekannu1.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
@@ -108,7 +108,7 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/teekuppi.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>
@@ -126,7 +126,7 @@ function StuffCards({product,url,addToCart}) {
               <Link className='card_item_link'>
                 <figure className='card_item_pic-wrap'>
                   <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
+                    src= {URL + 'images/teekuppi1.jpg'}  alt={product?.name}
                   />
                 </figure>
                 <div className='card_item_info'>

@@ -60,6 +60,7 @@ export default function Navbar({url, setCategory, cart}) {
                 ))}
               </ul>
             </li>
+            
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/Contact">OTA YHTEYTTÄ</Link>
             </li>
