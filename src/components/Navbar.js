@@ -27,7 +27,8 @@ export default function Navbar({url, setCategory, cart}) {
   return (
     <nav className="navbar navbar-expand-md fixed-top">
       <div className="container-fluid">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
@@ -60,19 +61,16 @@ export default function Navbar({url, setCategory, cart}) {
                 ))}
               </ul>
             </li>
-            
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/Contact">OTA YHTEYTTÄ</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/SignUp"><i class="far fa-user"></i></Link>
             </li>
-          </ul>
-          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Cart cart={cart}/>
             </li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </nav>

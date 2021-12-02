@@ -84,8 +84,7 @@ export default function App() {
 {/*           <Header search={search}/> */}
         <div id="content" className="container-fluid">
           <Switch>
-            <Route
-              path="/" render={() =>
+            <Route path="/" render={() =>
                 <Home
                   URL={URL}
                   emptyCart={emptyCart}
@@ -102,9 +101,11 @@ export default function App() {
             <Route path='/stuff' component={Stuff} />
             <Route path="/Admin" render={() => <Admin/>}/>
             <Route path="/CoffeeCards" render={() => 
-                <CoffeeCards emptyCart={emptyCart}
-                  category={category}
-                  addToCart={addToCart}/>}/>
+              <CoffeeCards 
+                emptyCart={emptyCart}
+                category={category}
+                addToCart={addToCart}/>}
+              />
 
             <Route path="/order" render={() => 
               <Order url={URL} 

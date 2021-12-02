@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const URL = "http://localhost/syksynprojekti2021/";
 
 function CoffeeCards({url, category, addToCart}) {
-  
 
   return (
     <>
