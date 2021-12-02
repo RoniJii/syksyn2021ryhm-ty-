@@ -99,6 +99,7 @@ export default function App() {
             <Route path='/coffee' component={Coffee} />
             <Route path='/tea' component={Tea} />
             <Route path='/stuff' component={Stuff} />
+            
             <Route path="/Admin" render={() => <Admin/>}/>
             <Route path="/CoffeeCards" render={() => 
               <CoffeeCards 

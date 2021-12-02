@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
-export default function Home({url, category, addToCart}) {
+export default function Coffeecards({url, category, addToCart}) {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -29,10 +29,10 @@ export default function Home({url, category, addToCart}) {
     }, [category, url])
 
     return (
-        <div className='container-fluid' style={{marginTop: '100px'}}>
-         <h3>{category?.name}</h3>
+        <div>
+        
         {products.map(product => (
-            <div key={product.id} >
+            <div key={product.id}>
                 <Link className='card_item_link'
                  to={{
                     pathname: '/',
@@ -40,33 +40,32 @@ export default function Home({url, category, addToCart}) {
                       id: product.id,
                       name: product.name,
                     }
-                }}
-                >
+                }}>
                 </Link> 
                 <div className='cards'>
-                        <h3 className='teksti1'>{product.name}</h3>
-                        <div className='cards_container'>
-                            <div className='card_wrapper'>
+                    <h3 className='teksti1'></h3>
+                    <div className='cards_container'>
+                        <div className='card_wrapper'>
                             <ul className='card_items'>
                                 <div className='card_item'>
-                                <div className='card_item_link'>
-                                    <figure className='card_item_pic-wrap'>
-                                        <img src= {URL + 'images/' + product.image}style={{ maxHeight: '150px'} }  alt={product.name}/>
-                                    </figure>
-                                    <div className='card_item_info'>
-                                    <div className='card_item_text'>
-                                        <h5></h5>
-                                        <p>{product.price} €</p>
+                                    <div className='card_item_link'>
+                                        <figure className='card_item_pic-wrap'>
+                                            <img src= {URL + 'images/' + product.image} style={{ maxHeight: '150px'} }  alt={product.name}/>
+                                        </figure>
+                                        <div className='card_item_info'>
+                                            <div className='card_item_text'>
+                                                <h5>{product.name} </h5>
+                                                <p>{product.price} €</p>
+                                            </div>
+                                        <button className='btn' type='button' onClick={e => addToCart(product)}>Lisää ostoskoriin</button>
+                                        </div>
                                     </div>
-                                    <button className='btn' type='button' onClick={e => addToCart(product)}>Lisää ostoskoriin</button>
-                                    </div>
-                                </div>
                                 </div>
                             </ul>
-                            </div>
                         </div>
-                      </div>  
-                    </div>     
+                    </div>
+                </div>  
+            </div>     
         ))} 
         </div>
     )
