@@ -2,6 +2,7 @@ import React from 'react';
 import '../../App.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 let loginUrl = "http://localhost/syksynprojekti2021/login.php";
@@ -91,10 +92,20 @@ function Resource(props){
     props.auth(false);
   }
 
-  return (
-    <div style={{marginTop: '150px'}}>
-      <p>Logged in as: {content}</p>
-      <button className='btn' type='button' onClick={logout}>Logout</button>
-    </div>
-  );
+    if(content === "admin") {
+      return (
+        <div style={{marginTop: '150px'}}>
+          <p>Logged in as: {content}</p>
+          <button className='btn' type='button' onClick={logout}>Logout</button>
+          <Link to="/admin"><button className='btn' type='button'>Admin panel</button></Link>
+        </div>
+      );
+    } else {
+    return (
+      <div style={{marginTop: '150px'}}>
+        <p>Logged in as: {content}</p>
+        <button className='btn' type='button' onClick={logout}>Logout</button>
+      </div>
+    );
+  }
 }
