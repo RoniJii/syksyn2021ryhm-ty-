@@ -48,7 +48,7 @@ export default function Navbar({url, setCategory, cart}) {
                   <li key={category.id}>
                     <Link className="dropdown-item"
                       to={{
-                        pathname: '/coffeecards/',
+                        pathname: '/coffee/',
                         state: {
                           id: category.id,
                           name: category.name,

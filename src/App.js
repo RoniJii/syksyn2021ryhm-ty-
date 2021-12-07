@@ -9,11 +9,10 @@ import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
-import Coffee from './components/pages/Coffee';
-import Tea from './components/pages/Tea';
-import Stuff from './components/pages/Stuff';
 import Admin from './components/Admin';
-import CoffeeCards from './components/Coffeecards';
+import Coffee from './components/Coffee';
+import Tea from './components/Tea';
+import Stuff from './components/Stuff';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
@@ -96,13 +95,24 @@ export default function App() {
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
-            <Route path='/coffee' component={Coffee} />
-            <Route path='/tea' component={Tea} />
-            <Route path='/stuff' component={Stuff} />
-            
             <Route path="/Admin" render={() => <Admin/>}/>
-            <Route path="/CoffeeCards" render={() => 
-              <CoffeeCards 
+
+            <Route path="/coffee" render={() => 
+              <Coffee 
+                emptyCart={emptyCart}
+                category={category}
+                addToCart={addToCart}/>}
+              />
+
+            <Route path="/tea" render={() => 
+              <Tea
+                emptyCart={emptyCart}
+                category={category}
+                addToCart={addToCart}/>}
+              />
+
+            <Route path="/stuff" render={() => 
+              <Stuff
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}

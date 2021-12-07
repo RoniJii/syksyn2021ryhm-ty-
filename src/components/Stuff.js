@@ -10,6 +10,7 @@ function StuffCards({product,url,addToCart}) {
   
   return (
     <>
+    <h1 className='stuff'>Oheistuotteet</h1>
     <div className='cards'>
     <h3 className='teksti1'>Muiden tuotteiden esittelyä</h3>
       <div className='cards_container'>

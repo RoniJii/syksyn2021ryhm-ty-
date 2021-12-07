@@ -5,7 +5,6 @@ import '../../App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 //import { v4 as uuidv4 } from 'uuid';
-import { Link } from 'react-router-dom';
 
 ///urlin tuonti ei toimi edelleenkään..
 
@@ -35,28 +34,8 @@ export default function Home({url, category, addToCart}) {
 
     return (
         <div className='container-fluid' style={{marginTop: '100px'}}>
-        {/* <h3>{category?.name}</h3>
-        {products.map(product => (
-            <div key={product.id}>
-                <Link
-                 to={{
-                    pathname: '/',
-                    state: {
-                      id: product.id,
-                      name: product.name,
-                    }
-                }}
-                >
-                </Link>
-                {product.name}
-                <figure>
-                <img src= {URL + 'images/' + product.image}style={{ maxHeight: '150px'} }  alt={product.name}/>
-                </figure>
-                 <button className='btn' type='button' onClick={e => addToCart(product)}>Add</button>
-            </div>
-        ))} */}
-        <Karuselli/>
-        <Cards/>
+            <Karuselli/>
+            <Cards/>
         </div>
     )
 }

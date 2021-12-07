@@ -2,13 +2,11 @@ import React from 'react';
 import './productcards.css';
 import { Link } from 'react-router-dom';
 
-
-const URL = "http://localhost/syksynprojekti2021/";
-
 function TeaCards({url, category, addToCart}) {
   
   return (
     <>
+      <h1 className='tea'>Teetuotteet</h1>
       <div className='cards'>
       <h3 className='teksti1'>Tee-esittelyä</h3>
       <div className='cards_container'>

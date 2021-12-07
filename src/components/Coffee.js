@@ -2,7 +2,6 @@ import React from 'react'
 import './productcards.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-//import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -29,19 +28,19 @@ export default function Coffeecards({url, category, addToCart}) {
     }, [category, url])
 
     return (
-        <div>
-        
-        {products.map(product => (
-            <div key={product.id}>
-                <Link className='card_item_link'
-                 to={{
-                    pathname: '/',
-                    state: {
-                      id: product.id,
-                      name: product.name,
-                    }
-                }}>
-                </Link> 
+        <>
+            <h1 className='coffee'>Kahvituotteet</h1>
+            {products.map(product => (
+                <div key={product.id}>
+                    <Link className='card_item_link'
+                    to={{
+                        pathname: '/',
+                        state: {
+                        id: product.id,
+                        name: product.name
+                        }
+                    }}>
+                    </Link> 
                 <div className='cards'>
                     <h3 className='teksti1'></h3>
                     <div className='cards_container'>
@@ -50,7 +49,7 @@ export default function Coffeecards({url, category, addToCart}) {
                                 <div className='card_item'>
                                     <div className='card_item_link'>
                                         <figure className='card_item_pic-wrap'>
-                                            <img src= {URL + 'images/' + product.image} style={{ maxHeight: '150px'} }  alt={product.name}/>
+                                            <img src= {URL + 'images/' + product.image} style={{ maxHeight: '150px'}}  alt={product.name}/>
                                         </figure>
                                         <div className='card_item_info'>
                                             <div className='card_item_text'>
@@ -65,9 +64,9 @@ export default function Coffeecards({url, category, addToCart}) {
                         </div>
                     </div>
                 </div>  
-            </div>     
-        ))} 
-        </div>
+                </div>     
+            ))} 
+        </>
     )
 
     
