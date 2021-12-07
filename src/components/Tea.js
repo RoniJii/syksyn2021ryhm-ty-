@@ -2,6 +2,7 @@ import React from 'react';
 import './productcards.css';
 import { Link } from 'react-router-dom';
 
+const URL = "http://localhost/syksynprojekti2021/";
 function TeaCards({url, category, addToCart}) {
   
   return (
