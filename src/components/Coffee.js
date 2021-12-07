@@ -47,18 +47,20 @@ export default function Coffeecards({url, category, addToCart}) {
                         <div className='card_wrapper'>
                             <ul className='card_items'>
                                 <div className='card_item'>
-                                    <div className='card_item_link'>
+                                    <Link className='card_item_link'>
                                         <figure className='card_item_pic-wrap'>
-                                            <img src= {URL + 'images/' + product.image} style={{ maxHeight: '150px'}}  alt={product.name}/>
+                                            <img className='card_item_img' src={URL + 'images/' + product.image} alt={product.name}/>
                                         </figure>
                                         <div className='card_item_info'>
                                             <div className='card_item_text'>
                                                 <h5>{product.name} </h5>
                                                 <p>{product.price} €</p>
                                             </div>
-                                        <button className='btn' type='button' onClick={e => addToCart(product)}>Lisää ostoskoriin</button>
+                                            <button className='btn' type='button' 
+                                                onClick={e => addToCart(product)}>Lisää ostoskoriin
+                                            </button>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </ul>
                         </div>
