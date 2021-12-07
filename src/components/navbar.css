@@ -19,15 +19,11 @@
     color: #31231D !important;
 }
 
-.nav-link a:hover {
-    color:#DDA35D !important;
-}
-
 .navbar-toggler {
     border-color: rgba(235,247,227,1) !important;
 }
 
 Form {
     margin-left: 10px;
-
 }
+ 

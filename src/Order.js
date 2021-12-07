@@ -14,11 +14,10 @@ export default function Order({url, category, cart, removeFromCart, updateAmount
     const [inputIndex, setInputIndex] = useState(-1)
     const cartlenght = Object.keys(cart).length;
 
-    function changeAmount(e,product,index) {
-        
+    function changeAmount(e,product) {
         updateAmount(e.target.value,product);
-        setInputIndex(index);
-    }
+      }  
+
 
     useEffect(() => {
        

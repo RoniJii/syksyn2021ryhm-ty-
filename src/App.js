@@ -13,6 +13,7 @@ import Coffee from './components/pages/Coffee';
 import Tea from './components/pages/Tea';
 import Stuff from './components/pages/Stuff';
 import Admin from './components/Admin';
+import CoffeeCards from './components/Coffeecards';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
@@ -64,18 +65,18 @@ export default function App() {
       localStorage.setItem('cart', JSON.stringify(itemsWithoutRemoved));
     }
 
-    function updateAmount(amount, product) {
+    function updateAmount(amount,product) {
       product.amount = amount;
       const index = cart.findIndex((item => item.id === product.id));
-      const modifiedCart = Object.assign([...cart], {[index]: product});
+      const modifiedCart = Object.assign([...cart],{[index]:product});
       setCart(modifiedCart);
       localStorage.setItem('cart',JSON.stringify(modifiedCart));
-      }
-
-    function emptyCart() {
-      setCart([]);
-      localStorage.setItem('cart', JSON.stringify([]));
     }
+
+     function emptyCart() {
+       setCart([]);
+       localStorage.setItem('cart', JSON.stringify([]));
+     }
     
     return (
       <>
@@ -83,8 +84,7 @@ export default function App() {
 {/*           <Header search={search}/> */}
         <div id="content" className="container-fluid">
           <Switch>
-            <Route
-              path="/" render={() =>
+            <Route path="/" render={() =>
                 <Home
                   URL={URL}
                   emptyCart={emptyCart}
@@ -99,14 +99,22 @@ export default function App() {
             <Route path='/coffee' component={Coffee} />
             <Route path='/tea' component={Tea} />
             <Route path='/stuff' component={Stuff} />
+            
             <Route path="/Admin" render={() => <Admin/>}/>
+            <Route path="/CoffeeCards" render={() => 
+              <CoffeeCards 
+                emptyCart={emptyCart}
+                category={category}
+                addToCart={addToCart}/>}
+              />
 
             <Route path="/order" render={() => 
               <Order url={URL} 
                 URL={URL}
                 cart={cart}
-               /*  empty={emptyCart} */
-                removeFromCart={removeFromCart} />} 
+                emptyCart={emptyCart}
+                removeFromCart={removeFromCart}
+                updateAmount={updateAmount}/>}
               /> 
           </Switch>
         </div>
