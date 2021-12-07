@@ -13,6 +13,7 @@ import Admin from './components/Admin';
 import Coffee from './components/Coffee';
 import Tea from './components/Tea';
 import Stuff from './components/Stuff';
+import Product from './components/Product';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
@@ -27,10 +28,9 @@ export default function App() {
 
     useEffect(() => {
         if (location.state !==undefined) {
-
           if (location.pathname==="/") {
             setCategory({id: location.state.id, name: location.state.name});
-          } else if (location.pathname==="/Coffee") {
+          } else if (location.pathname==="/product") {
             setProduct({id: location.state.id, name: location.state.name});
           }
         }
@@ -92,10 +92,13 @@ export default function App() {
                 />}
                 exact
             />
+            
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
-            <Route path='/Admin' render={() => <Admin/>}/>
+            <Route path='/Admin' render={() => 
+              <Admin/>}
+            />
 
             <Route path='/coffee' render={() => 
               <Coffee 
@@ -116,6 +119,12 @@ export default function App() {
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
+              />
+
+            <Route path='/product' render={() => 
+              <Product
+                URL={URL}
+                product={product}/>}
               />
 
             <Route path='/order' render={() => 

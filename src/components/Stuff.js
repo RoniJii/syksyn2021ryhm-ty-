@@ -47,7 +47,7 @@ const URL = "http://localhost/syksynprojekti2021/";
                     }}>
                   </Link>
                   <div className='card_item'>
-                    <Link className='card_item_link'>
+                    <Link to='/product' className='card_item_link'>
                       <figure className='card_item_pic-wrap'>
                         <img className='card_item_img' src={URL + 'images/' + product.image} alt={product.name}/>
                       </figure>
