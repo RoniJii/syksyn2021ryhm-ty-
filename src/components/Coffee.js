@@ -70,8 +70,6 @@ export default function Coffeecards({url, category, addToCart}) {
             </div>  
         </>
     )
-
-    
 }
 
 

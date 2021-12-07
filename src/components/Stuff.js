@@ -29,175 +29,45 @@ function StuffCards({url, category, addToCart}) {
   
   return (
     <>
-    <h1 className='stuff'>Oheistuotteet</h1>
-    {products.map(product => (
+      <h1 className='stuff'>Oheistuotteet</h1>
+      <div className='cards'>
+        <h3 className='teksti1'>Valikoimastamme löydät paljon kaikkea liibalaaba</h3>
+        <div className='cards_container'>
+          <div className='card_wrapper'>
+            <ul className='card_items'>
+              {products.map(product => (
                 <div key={product.id}>
-                    <Link className='card_item_link'
+                  <Link className='card_item_link'
                     to={{
-                        pathname: '/',
-                        state: {
+                      pathname: '/',
+                      state: {
                         id: product.id,
                         name: product.name
-                        }
+                      }
                     }}>
-                    </Link> 
-    <div className='cards'>
-    <h3 className='teksti1'>Muiden tuotteiden esittelyä</h3>
-      <div className='cards_container'>
-        <div className='card_wrapper'>
-          <ul className='card_items'>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/Kahvimylly1.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
+                  </Link>
+                  <div className='card_item'>
+                    <Link className='card_item_link'>
+                      <figure className='card_item_pic-wrap'>
+                        <img className='card_item_img' src={URL + 'images/' + product.image} alt={product.name}/>
+                      </figure>
+                      <div className='card_item_info'>
+                        <div className='card_item_text'>
+                          <h5>{product.name} </h5>
+                          <p>{product.price} €</p>
+                        </div>
+                        <button className='btn' type='button' 
+                          onClick={e => addToCart(product)}>Lisää ostoskoriin
+                        </button>
+                      </div>
+                    </Link>
                   </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
                 </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/Kahvimylly2.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/kahvimuki.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/teekannu.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-          </ul>
-          <ul className='card_items'>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/teekannu1.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/teekuppi.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/teekuppi1.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-            <div className='card_item'>
-              <Link className='card_item_link'>
-                <figure className='card_item_pic-wrap'>
-                  <img className='card_item_img'
-                    src= {URL + 'images/kahvi12.jpg'}  alt={product?.name}
-                  />
-                </figure>
-                <div className='card_item_info'>
-                  <div className='card_item_text'>
-                    <h5>{product.name} </h5>
-                    <p>{product.price} €</p>
-                  </div>
-                  <button className='btn' type='button' 
-                    onClick={e => addToCart(product)}> Lisää ostoskoriin
-                  </button>
-                </div>
-              </Link>
-            </div>
-          </ul>
+              ))} 
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-    </div>
-    ))}  
+      </div>  
     </>
   );
 }
