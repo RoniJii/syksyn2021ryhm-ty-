@@ -95,30 +95,30 @@ export default function App() {
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
-            <Route path="/Admin" render={() => <Admin/>}/>
+            <Route path='/Admin' render={() => <Admin/>}/>
 
-            <Route path="/coffee" render={() => 
+            <Route path='/coffee' render={() => 
               <Coffee 
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path="/tea" render={() => 
+            <Route path='/tea' render={() => 
               <Tea
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path="/stuff" render={() => 
+            <Route path='/stuff' render={() => 
               <Stuff
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path="/order" render={() => 
+            <Route path='/order' render={() => 
               <Order url={URL} 
                 URL={URL}
                 cart={cart}

@@ -33,7 +33,6 @@ function StuffCards({product,url,addToCart}) {
                   </button>
                 </div>
               </Link>
-              
             </div>
             <div className='card_item'>
               <Link className='card_item_link'>

@@ -41,31 +41,31 @@ export default function Coffeecards({url, category, addToCart}) {
                         }
                     }}>
                     </Link> 
-                <div className='cards'>
-                    <h3 className='teksti1'></h3>
-                    <div className='cards_container'>
-                        <div className='card_wrapper'>
-                            <ul className='card_items'>
-                                <div className='card_item'>
-                                    <Link className='card_item_link'>
-                                        <figure className='card_item_pic-wrap'>
-                                            <img className='card_item_img' src={URL + 'images/' + product.image} alt={product.name}/>
-                                        </figure>
-                                        <div className='card_item_info'>
-                                            <div className='card_item_text'>
-                                                <h5>{product.name} </h5>
-                                                <p>{product.price} €</p>
+                    <div className='cards'>
+                        <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastastu!</h3>
+                        <div className='cards_container'>
+                            <div className='card_wrapper'>
+                                <ul className='card_items'>
+                                    <div className='card_item'>
+                                        <Link className='card_item_link'>
+                                            <figure className='card_item_pic-wrap'>
+                                                <img className='card_item_img' src={URL + 'images/' + product.image} alt={product.name}/>
+                                            </figure>
+                                            <div className='card_item_info'>
+                                                <div className='card_item_text'>
+                                                    <h5>{product.name} </h5>
+                                                    <p>{product.price} €</p>
+                                                </div>
+                                                <button className='btn' type='button' 
+                                                    onClick={e => addToCart(product)}>Lisää ostoskoriin
+                                                </button>
                                             </div>
-                                            <button className='btn' type='button' 
-                                                onClick={e => addToCart(product)}>Lisää ostoskoriin
-                                            </button>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </ul>
+                                        </Link>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>  
+                    </div>  
                 </div>     
             ))} 
         </>
