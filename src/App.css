@@ -72,6 +72,10 @@ tumma ruskea (esim teksteihin) #31231D
   color: #31231D;
 }
 
+table {
+  margin-top: 30px;
+}
+
 th {
   font-size: 40px;
 }
@@ -156,7 +160,4 @@ button {
   cursor: pointer;
 }
 
-figure {
-  display: inline-block;
-}
 

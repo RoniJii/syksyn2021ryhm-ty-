@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
-function StuffCards({url, category, addToCart}) {
+ export default function StuffCards({url, category, addToCart}) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function StuffCards({url, category, addToCart}) {
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>
-              {products.map(product => (
+            {products.map(product => (
                 <div key={product.id}>
                   <Link className='card_item_link'
                     to={{
@@ -63,7 +63,7 @@ function StuffCards({url, category, addToCart}) {
                     </Link>
                   </div>
                 </div>
-              ))} 
+              ))}  
             </ul>
           </div>
         </div>
@@ -71,5 +71,3 @@ function StuffCards({url, category, addToCart}) {
     </>
   );
 }
-
-export default StuffCards;
