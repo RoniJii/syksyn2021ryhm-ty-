@@ -34,7 +34,6 @@ h3 {
 
 .card_item {
     display: flex;
-    flex: 1;
     margin: 0 1rem;
     border-radius: 5px;
     background-color: snow;
@@ -79,7 +78,7 @@ h3 {
   
 .card_item_text {
     color: #31231D;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn {
@@ -93,13 +92,6 @@ h3 {
     color: snow;
 }
 
-  
-@media only screen and (min-width: 1200px) {
-    .content_blog_container {
-      width: 84%;
-    }
-  }
-  
   @media only screen and (min-width: 1024px) {
     .card_items {
       display: flex;
