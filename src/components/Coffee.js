@@ -34,11 +34,11 @@ export default function Coffeecards({url, category, addToCart}) {
                 <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastastu!</h3>
                 <div className='cards_container'>
                     <div className='card_wrapper'>
-                        <ul className='card_items'>
+                        <div className='card_items'>
                             <div className='card_item'>
                                 {products.map(product => (
-                                <div key={product.id}>
-                                    <Link className='card_item_link'
+                                 <div key={product.id} style={{paddingLeft : '30px'}}>
+                                    <Link className='card_item_link' style={{padding : '20px', backgroundColor : "white"}}
                                         to={{
                                             pathname: '/product',
                                             state: {
@@ -58,11 +58,11 @@ export default function Coffeecards({url, category, addToCart}) {
                                                 onClick={e => addToCart(product)}>Lisää ostoskoriin
                                             </button>
                                         </div>    
-                                    </Link>  
+                                    </Link> 
                                 </div>
                                 ))} 
                             </div>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>  

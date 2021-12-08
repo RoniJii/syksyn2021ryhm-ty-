@@ -88,7 +88,6 @@ export default function App() {
                   URL={URL}
                   emptyCart={emptyCart}
                   category={category}
-                  addToCart={addToCart}
                 />}
                 exact
             />
@@ -124,7 +123,8 @@ export default function App() {
             <Route path='/product' render={() => 
               <Product
                 URL={URL}
-                product={product}/>}
+                product={product}
+                addToCart={addToCart}/>}
               />
 
             <Route path='/order' render={() => 

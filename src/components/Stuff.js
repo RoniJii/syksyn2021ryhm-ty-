@@ -1,5 +1,5 @@
 import React from 'react';
-import './productcards.css';
+//import './productcards.css';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -68,6 +68,7 @@ const URL = "http://localhost/syksynprojekti2021/";
           </div>
         </div>
       </div>  
+      
     </>
   );
 }

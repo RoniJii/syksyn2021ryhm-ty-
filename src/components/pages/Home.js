@@ -10,7 +10,7 @@ import axios from 'axios';
 
 const URL = "http://localhost/syksynprojekti2021/";
 
-export default function Home({url, category, addToCart}) {
+export default function Home({url, category}) {
     const [products, setProducts] = useState([]);
 
 
