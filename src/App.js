@@ -28,7 +28,7 @@ export default function App() {
 
     useEffect(() => {
         if (location.state !==undefined) {
-          if (location.pathname==="/") {
+          if (location.pathname==="/coffee") {
             setCategory({id: location.state.id, name: location.state.name});
           } else if (location.pathname==="/product") {
             setProduct({id: location.state.id, name: location.state.name});
