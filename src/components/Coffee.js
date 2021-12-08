@@ -54,9 +54,11 @@ export default function Coffeecards({url, category, addToCart}) {
                                                 <h5>{product.name} </h5>
                                                 <p>{product.price} €</p>
                                             </div>
+                                            <Link>
                                             <button className='btn' type='button' 
                                                 onClick={e => addToCart(product)}>Lisää ostoskoriin
                                             </button>
+                                            </Link>
                                         </div>    
                                     </Link> 
                                 </div>
