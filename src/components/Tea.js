@@ -35,7 +35,7 @@ export default function TeaCards({url, category, addToCart}) {
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>
-            {products.map(product => (
+              {products.map(product => (
                 <div key={product.id}>
                   <Link className='card_item_link'
                     to={{
@@ -56,11 +56,11 @@ export default function TeaCards({url, category, addToCart}) {
                           <h5>{product.name} </h5>
                           <p>{product.price} €</p>
                         </div>
-                          <Link>
-                            <button className='btn' type='button' 
-                              onClick={e => addToCart(product)}>Lisää ostoskoriin
-                            </button>
-                          </Link>
+                        <Link>
+                          <button className='btn' type='button' 
+                            onClick={e => addToCart(product)}>Lisää ostoskoriin
+                          </button>
+                        </Link>
                       </div>
                     </Link>
                   </div>

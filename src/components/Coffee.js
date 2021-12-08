@@ -35,37 +35,37 @@ export default function Coffeecards({url, category, addToCart}) {
                 <div className='cards_container'>
                     <div className='card_wrapper'>
                         <ul className='card_items'>
-                        {products.map(product => (
-                            <div key={product.id}>
-                            <Link className='card_item_link'
-                                to={{
-                                pathname: '/product',
-                                state: {
-                                    id: product.id,
-                                    name: product.name
-                                }
-                                }}>
-                            </Link>
-                                <div className='card_item'>
-                                    <Link to='/product' className='card_item_link'>
-                                    <figure className='card_item_pic-wrap'>
-                                        <img className='card_item_img' src={URL + 'images/' + product.image} alt={product?.name}/>
-                                    </figure>
-                                    <div className='card_item_info'>
-                                        <div className='card_item_text'>
-                                            <h5>{product.name} </h5>
-                                            <p>{product.price} €</p>
+                            {products.map(product => (
+                                <div key={product.id}>
+                                <Link className='card_item_link'
+                                    to={{
+                                    pathname: '/product',
+                                    state: {
+                                        id: product.id,
+                                        name: product.name
+                                    }
+                                    }}>
+                                </Link>
+                                    <div className='card_item'>
+                                        <Link to='/product' className='card_item_link'>
+                                        <figure className='card_item_pic-wrap'>
+                                            <img className='card_item_img' src={URL + 'images/' + product.image} alt={product?.name}/>
+                                        </figure>
+                                        <div className='card_item_info'>
+                                            <div className='card_item_text'>
+                                                <h5>{product.name} </h5>
+                                                <p>{product.price} €</p>
+                                            </div>
+                                            <Link>
+                                                <button className='btn' type='button' 
+                                                    onClick={e => addToCart(product)}>Lisää ostoskoriin
+                                                </button>
+                                            </Link>
                                         </div>
-                                        <Link>
-                                            <button className='btn' type='button' 
-                                                onClick={e => addToCart(product)}>Lisää ostoskoriin
-                                            </button>
                                         </Link>
                                     </div>
-                                    </Link>
                                 </div>
-                            </div>
-                        ))}  
+                            ))}  
                         </ul>
                     </div>
                 </div>
