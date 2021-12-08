@@ -37,8 +37,8 @@ export default function Coffeecards({url, category, addToCart}) {
                         <div className='card_items'>
                             <div className='card_item'>
                                 {products.map(product => (
-                                <div key={product.id}>
-                                    <Link className='card_item_link'
+                                 <div key={product.id} style={{paddingLeft : '30px'}}>
+                                    <Link className='card_item_link' style={{padding : '20px', backgroundColor : "white"}}
                                         to={{
                                             pathname: '/product',
                                             state: {
