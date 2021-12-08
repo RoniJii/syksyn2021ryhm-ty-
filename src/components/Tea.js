@@ -28,7 +28,7 @@ export default function TeaCards({url, category, addToCart}) {
   }, [category, url])
   
   return (
-    <>
+    <div>
       <h1 className='tea'>Teetuotteet</h1>
       <div className='cards'>
         <h3 className='teksti1'>Valikoimastamme löydät kahvin ja teen valmistukseen tarvittavia välineitä!</h3>
@@ -70,6 +70,6 @@ export default function TeaCards({url, category, addToCart}) {
           </div>
         </div>
       </div>  
-    </>
+    </div>
   );
 }

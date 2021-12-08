@@ -28,7 +28,7 @@ const URL = "http://localhost/syksynprojekti2021/";
   }, [category, url])
   
   return (
-    <>
+    <div>
       <h1 className='stuff'>Oheistuotteet</h1>
       <div className='cards'>
         <h3 className='teksti1'>Valikoimastamme löydät paljon kaikkea liibalaaba</h3>
@@ -70,6 +70,6 @@ const URL = "http://localhost/syksynprojekti2021/";
           </div>
         </div>
       </div>  
-    </>
+    </div>
   );
 }
