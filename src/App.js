@@ -95,7 +95,7 @@ export default function App() {
             <Route path='/contact' component={Contact} />
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
-            <Route path='/Admin' render={() => 
+            <Route path='/admin' render={() => 
               <Admin/>}
             />
 

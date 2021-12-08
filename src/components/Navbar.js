@@ -22,7 +22,7 @@ export default function Navbar({url, setCategory, cart}) {
           alert(error.response.data.error);
         }
       })
-},[url, setCategory])
+  },[url, setCategory])
 
   return (
     <nav className="navbar navbar-expand-md fixed-top">
@@ -62,10 +62,10 @@ export default function Navbar({url, setCategory, cart}) {
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/Contact">OTA YHTEYTTÄ</Link>
+              <Link className="nav-link" aria-current="page" to="/contact">OTA YHTEYTTÄ</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/SignUp"><i class="far fa-user"></i></Link>
+              <Link className="nav-link" aria-current="page" to="/signup"><i class="far fa-user"></i></Link>
             </li>
             <li className="nav-item">
               <Cart cart={cart}/>
