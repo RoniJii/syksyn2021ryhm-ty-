@@ -46,7 +46,7 @@ export default function Admin() {
         e.preventDefault(); 
         const json = JSON.stringify({category:category})
         console.log(json)
-        axios.post(url + 'add.php', json, {
+        axios.post(url + 'addcategory.php', json, {
             headers: {
                 'Content-Type' : 'application/json'
              }
