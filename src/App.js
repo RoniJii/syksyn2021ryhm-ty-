@@ -74,7 +74,7 @@ export default function App() {
 
      function emptyCart() {
        setCart([]);
-       localStorage.setItem('cart', JSON.stringify([]));
+       localStorage.removeItem('cart');
      }
     
     return (
