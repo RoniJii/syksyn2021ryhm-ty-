@@ -1,6 +1,8 @@
 .cards {
     padding: 4rem;
     background: #E3DECA;
+    position: auto;
+    margin-right: 700px;
   }
   
   h3 {
@@ -24,6 +26,7 @@
   
   .cards__items {
     margin-bottom: 20px;
+    
   }
   
   .cards__item {
@@ -31,7 +34,12 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 5px;
-    background-color: snow;
+    
+  }
+  .teksti1 {
+margin-left: 250px ;
+margin-top: 200px;
+
   }
   
   .cards__item__link {
