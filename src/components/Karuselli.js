@@ -33,7 +33,7 @@ export default function Karuselli() {
                     alt="Third slide"
                     />
 
-                    <Carousel.Caption style={{color: ''}}>
+                    <Carousel.Caption>
                     <h3>Haluatko jauhaa omat papusi? Meiltä löydät papujen jauhamiseen tarvittavat laitteet!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
