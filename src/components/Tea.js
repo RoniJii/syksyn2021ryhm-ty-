@@ -31,7 +31,7 @@ export default function TeaCards({url, category, addToCart}) {
     <div>
       <h1 className='tea'>Teetuotteet</h1>
       <div className='cards'>
-        <h3 className='teksti1'>Valikoimastamme löydät kahvin ja teen valmistukseen tarvittavia välineitä!</h3>
+        <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia teemakuja. Tutustu ja ihastu!</h3>
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>
@@ -42,7 +42,7 @@ export default function TeaCards({url, category, addToCart}) {
                       pathname: '/product',
                       state: {
                         id: product.id,
-                        name: product.name
+                        name: product.name,
                       }
                     }}>
                   </Link>

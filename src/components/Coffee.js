@@ -42,7 +42,7 @@ export default function Coffeecards({url, category, addToCart}) {
                                     pathname: '/product',
                                     state: {
                                         id: product.id,
-                                        name: product.name
+                                        name: product.name,
                                     }
                                     }}>
                                 </Link>
