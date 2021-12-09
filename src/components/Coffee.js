@@ -28,7 +28,7 @@ export default function Coffeecards({url, category, addToCart}) {
     }, [category, url])
 
     return (
-        <div>
+        <>
             <h1 className='coffee'>Kahvituotteet</h1>
             <div className='cards'>
                 <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastu!</h3>
@@ -70,7 +70,7 @@ export default function Coffeecards({url, category, addToCart}) {
                     </div>
                 </div>
             </div>  
-        </div>
+        </>
     )
 }
 

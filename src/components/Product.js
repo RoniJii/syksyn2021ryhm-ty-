@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const URL = "http://localhost/syksynprojekti2021/";
+//const URL = "http://localhost/syksynprojekti2021/";
 
 export default function Product({product,addToCart}) {
     
     return (
-        <div style={{'padding-top': '100px'}}>
+        <div style={{'paddingTop': '100px'}}>
             <Card style={{ width: '40rem' }}>
                 {/* <Card.Img variant="top" src={URL + 'images/' + product.image} alt={product.name} /> */}
                 <Card.Body>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './productcards.css';
+//import './productcards.css';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -28,7 +28,7 @@ export default function TeaCards({url, category, addToCart}) {
   }, [category, url])
   
   return (
-    <div>
+    <>
       <h1 className='tea'>Teetuotteet</h1>
       <div className='cards'>
         <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia teemakuja. Tutustu ja ihastu!</h3>
@@ -69,7 +69,7 @@ export default function TeaCards({url, category, addToCart}) {
             </ul>
           </div>
         </div>
-      </div>  
-    </div>
+      </div>        
+    </>
   );
 }

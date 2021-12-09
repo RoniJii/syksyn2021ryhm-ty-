@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 
+.col-3 {
+    width: 33%;
+}
+
 .cards {
     padding: 4rem;
     background: #E3DECA;
@@ -34,7 +38,7 @@ h3 {
 
 .card_item {
     display: flex;
-    margin: 0 1rem;
+    margin: 0.5rem;
     border-radius: 5px;
     background-color: snow;
     width: 18rem;
@@ -54,7 +58,7 @@ h3 {
 .card_item_pic-wrap {
     position: relative;
     width: 100%;
-    padding-top: 80%;
+    padding-top: 67%;
     overflow: hidden;
 }
   
