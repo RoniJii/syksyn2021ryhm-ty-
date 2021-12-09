@@ -8,7 +8,7 @@ import axios from 'axios';
 
 ///urlin tuonti ei toimi edelleenkään..
 
-const URL = "http://localhost/syksynprojekti2021/";
+//const URL = "http://localhost/syksynprojekti2021/";
 
 export default function Home({url, category}) {
     const [products, setProducts] = useState([]);

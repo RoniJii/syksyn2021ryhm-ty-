@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 
+.col-3 {
+    width: 33%;
+}
+
 .cards {
     padding: 4rem;
   
@@ -36,9 +40,11 @@ h3 {
 
 .card_item {
     display: flex;
-    margin: 0 1rem;
+    margin: 0.5rem;
     border-radius: 5px;
-    width: 15rem;
+    background-color: snow;
+    width: 18rem;
+    margin-bottom: 30px;
 }
   
 .card_item_link {
@@ -54,7 +60,7 @@ h3 {
 .card_item_pic-wrap {
     position: relative;
     width: 100%;
-    padding-top: 80%;
+    padding-top: 67%;
     overflow: hidden;
 }
   
@@ -96,11 +102,5 @@ h3 {
 @media only screen and (min-width: 1024px) {
     .card_items {
       display: flex;
-    }
-}
-  
-@media only screen and (max-width: 1024px) {
-    .card_item {
-      margin-bottom: 2rem;
     }
 }
