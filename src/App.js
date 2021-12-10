@@ -85,7 +85,7 @@ export default function App() {
           <Switch>
             <Route path="/" render={() =>
                 <Home
-                  URL={URL}
+                  url={URL}
                   emptyCart={emptyCart}
                   category={category}
                 />}
@@ -96,7 +96,8 @@ export default function App() {
             <Route path='/signup' component={SignUp} />
             <Route path='/register' component={Register} />
             <Route path='/admin' render={() => 
-              <Admin/>}
+              <Admin
+                url={URL}/>}
             />
 
             <Route path='/coffee' render={() => 
