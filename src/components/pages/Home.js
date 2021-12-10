@@ -16,7 +16,7 @@ export default function Home({url, category}) {
 
     useEffect(() => {
         if (category !== null) {
-            const address = ('http://localhost/syksynprojekti2021/products/getproducts.php/' + category.id);
+            const address = (url + 'products/getproducts.php/' + category.id);
             console.log(address)
             axios.get(address)
             .then((response) => {
