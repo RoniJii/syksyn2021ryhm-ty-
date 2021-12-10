@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const url = "http://localhost/syksynprojekti2021/";
+//const url = "http://localhost/syksynprojekti2021/";
 
-export default function Admin() {
+export default function Admin({url}) {
 
     const [all, setAll] = useState([]);
     const [name, setName] = useState("")
