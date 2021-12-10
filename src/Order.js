@@ -1,4 +1,4 @@
-import { useState, useEffect, createRef } from 'react';
+import { useState, useEffect} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Link } from "react-router-dom";
 import './App.css';
@@ -10,10 +10,10 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
     const [zip, setZip] = useState("");
     const [city, setCity] = useState("");
     const [finished, setFinished] = useState(false);
-    const [inputs, setInputs] = useState([]);
-    const [inputIndex, setInputIndex] = useState(-1)
+    const [tilaus, setTilaus] = useState(false);
     const cartlenght = Object.keys(cart).length;
-
+    let sum = 0;
+    const [total, setTotal] = useState(0);
 
     function order(e) {
         e.preventDefault();
@@ -45,87 +45,109 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
         )
     }
 
-    let sum = 0;
+    
+    useEffect(() => {
+        for (let i = 0; i < cartlenght; i++) {
+          sum += Number(cart[i].price) * Number(cart[i].amount)
+        }
+        setTotal(sum)
+    }, [cart])
 
+    
     function changeAmount(e,product) {
         updateAmount(e.target.value,product);
       }  
 
 
-    useEffect(() => { //////////////ehkä turha
-       
-       for ( let i = 0;i<cartlenght; i++)
-            inputs[i] = createRef();
-    }, [cartlenght, inputs])
-
-    useEffect(() => { //////////////ehkä turha
-        if (inputs.length > 0 && inputIndex > -1 && inputs[inputIndex.current] !== null) {
-            inputs[inputIndex].current.focus();
-        }
-    }, [cart, inputs, inputIndex])
-
     if(finished === false) {
     return (
-        <div className='order'>
-            <table>
+        <div className='order'>    
+        <div>   
+                                <div>
+                                <span style={{fontSize : '20px'}}>Ostoskori</span>
+                                <span style={{marginLeft : '90px', fontSize : '20px'}}>Määrä</span>
+                                <span style={{marginLeft : '190px', fontSize : '20px'}}>Hinta</span>
+                                </div>  
+                    
+      <table>
                 <tbody>
-                    <th>Ostoskori</th>
                     {cart.map((product,index) => {
-                    //  sum+=parseFloat(product.price);
                             return(
                                 <tr key={uuidv4()}>
-                                    <td>{product.name}</td>
-                                    <td>{product.price} €</td>
-                                    <td><input
+                                    <td>{product.name}</td>   
+                                    <td style={{'paddingLeft' : '70px'}}>{product.price} €</td>
+                                    <td><Link to="/#" onClick={() => removeFromCart(product)}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                <path fillRule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                            </svg>
+                                        </Link>
+                                    </td>                
+                                    <td style={{'paddingLeft' : '130px'}}><input
                                         style={{width: '60px'}}
                                         type="number" step="1" min="1"
                                         onChange={e => changeAmount(e,product,index)}
                                         value={product.amount}/>
                                     </td> 
-                                    <td><Link to="/#" onClick={() => removeFromCart(product)}>Delete</Link></td>
-                                    <td><Link to="/#" onClick={() => emptyCart()}>Empty</Link></td>
                                 </tr>
                             )
                     })}
                 </tbody>
             </table>
+                    <Link to="/#">
+                        <button className="btn btn-primary" onClick={() => emptyCart()}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fillRule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </button>
+                    </Link>
+                        <span style={{marginLeft : '110px'}}>Yhteensä: {total}€</span>
+                        <button style={{marginLeft : '100px'}} className="btn btn-primary" value={tilaus} onClick={() => setTilaus(true) + setFinished(true)}>
+                            seuraava {'>>'}
+                        </button>       
+            </div>
+        </div>
+    )
+    } if (tilaus === true) {
+        return( 
             <>
-            <h3>Client information</h3>
-            <form onSubmit={order}>
+            <form onSubmit={order}  style={{'marginLeft' : '150px', 'marginTop' : '150px'}}>
                 <div className='form-group'>
-                    <label>First name: </label>
+                    <h3>Toimitustiedot</h3>
+                    <label>Etunimi: </label>
                     <input className='form-control' onChange={e => setFirstname(e.target.value)}></input>
                 </div>
 
                 <div className='form-group'>
-                    <label>Last name: </label>
+                    <label>Sukunimi: </label>
                     <input className='form-control' onChange={e => setLastname(e.target.value)}></input>
                 </div>
 
                 <div className='form-group'>
-                    <label>Address: </label>
+                    <label>Osoite: </label>
                     <input className='form-control' onChange={e => setAddress(e.target.value)}></input>
                 </div>
 
                 <div className='form-group'>
-                    <label>Postal code: </label>
+                    <label>Postinumero: </label>
                     <input className='form-control' onChange={e => setZip(e.target.value)}></input>
                 </div>
 
                 <div className='form-group'>
-                    <label>City: </label>
+                    <label>Kunta: </label>
                     <input className='form-control' onChange={e => setCity(e.target.value)}></input>
                 </div>
 
-                <div className='buttons'>
-                    <button className="btn btn-primary">Order</button>
+                <div className='buttons' style={{'paddingTop' : '20px', 'paddingBottom' : '81px'}}>
+                    <button className="btn btn-primary" onClick={() => setTilaus(false) + setFinished(false)}> {'<<'}Taaksepäin</button>
+                    <button style={{'marginLeft' : '50px'}} className="btn btn-primary" onClick={() => setTilaus(false)}>Tilaa</button>
                 </div>
             </form>
             </>
-        </div>
-    )
-    } 
+        )
+    }
     else {
-        return (<h3 style={{'padding-top' : '100px' }}>Thank you for your order</h3>)
+        return (<h3 style={{'padding' : '350px' }}>Kiitos tilauksesta!</h3>)
     }
 }

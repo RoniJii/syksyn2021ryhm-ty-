@@ -19,7 +19,7 @@ export default function Admin({url}) {
             }).catch(error => {
                 alert(error.response ? error.response.data.error : error)
             })
-        }, [])
+        }, [url])
 
     function newitem(e) {
         e.preventDefault();

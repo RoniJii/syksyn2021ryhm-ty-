@@ -34,7 +34,7 @@ export default function App() {
             setProduct({id: location.state.id, name: location.state.name});
           }
         }
-    }, [location.state])
+    }, [location.state, location.pathname])
 
     useEffect(() => {
         if ('cart' in localStorage) {
