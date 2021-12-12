@@ -35,25 +35,26 @@ export default function Coffeecards({url, category, addToCart}) {
             <h1 className='coffee'>Kahvituotteet</h1>
             <div className='cards'>
                 <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastu!</h3>
-                <div className='cards_container'>
-                    <div className='card_wrapper'>
-                        <ul className='card_items'>
-                            {products.map(product => (
-                                <div key={product.id}>
-                                <Link className='card_item_link'
-                                    to={{
-                                    pathname: '/product',
-                                    state: {
-                                        id: product.id,
-                                        name: product.name,
-                                    }
-                                    }}>
-                                </Link>
-                                    <div className='card_item'>
-                                        <Link to='/product' className='card_item_link'>
-                                        <figure className='card_item_pic-wrap'>
-                                            <img className='card_item_img' src={URL + 'images/' + product.image} alt={product?.name}/>
-                                        </figure>
+                <ul className='card_items'>
+                    {products.map(product => (
+                        <>
+                            <div key={product.id}>
+                            <Link 
+                                to={{
+                                pathname: '/product',
+                                state: {
+                                    id: product.id,
+                                    name: product.name,
+                                }
+                            }}>
+                            </Link>
+                                <div className='card_item'>
+                                    <div to='/product' className='card_item_link'>
+                                            <Link>
+                                                <figure className='card_item_pic-wrap'>
+                                                    <img className='card_item_img' src={URL + 'images/' + product.image} alt={product?.name}/>
+                                                </figure>
+                                            </Link>
                                         <div className='card_item_info'>
                                             <div className='card_item_text'>
                                                 <h5>{product.name} </h5>
@@ -65,13 +66,12 @@ export default function Coffeecards({url, category, addToCart}) {
                                                 </button>
                                             </Link>
                                         </div>
-                                        </Link>
                                     </div>
                                 </div>
-                            ))}  
-                        </ul>
-                    </div>
-                </div>
+                            </div>
+                        </>
+                    ))}  
+                </ul>
             </div>  
         </>
     )
