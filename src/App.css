@@ -74,14 +74,17 @@ tumma ruskea (esim teksteihin) #31231D
 
 table {
   margin-top: 30px;
+  width: 100%;
 }
 
 h2 {
   font-size: 40px;
 }
 
-td {
-  padding: 8px;
+th, tr, td {
+  padding-top: 10px;
+  padding-right: 40px;
+  text-align: left;
 }
 
 td a {
