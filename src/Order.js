@@ -61,7 +61,7 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
 
     if(finished === false) {
     return (
-        <div className='order'>    
+        <div className='cart'>    
             <div>   
                 <div>
                     <h2>Ostoskori</h2>
@@ -110,7 +110,7 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
                             </button>
                         </Link>
                         <button className="btn" style={{'marginLeft' : '10px'}} value={tilaus} onClick={() => setTilaus(true) + setFinished(true)}>
-                            Seuraava
+                            Seuraava {'>>'}
                         </button>
                     </div>  
                 </div>                    
@@ -120,38 +120,40 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
     } if (tilaus === true) {
         return( 
             <>
-            <form onSubmit={order}  style={{'marginLeft' : '150px', 'marginTop' : '150px'}}>
-                <div className='form-group'>
-                    <h3>Toimitustiedot</h3>
-                    <label>Etunimi: </label>
-                    <input className='form-control' onChange={e => setFirstname(e.target.value)}></input>
-                </div>
+            <div className='order'>
+                    <form className='order_form' onSubmit={order}>
+                        <h2 style={{'paddingTop' : '10px'}}>Toimitustiedot</h2>
+                        <div className='form-group'>
+                            <label>Etunimi: </label>
+                            <input className='form-control' onChange={e => setFirstname(e.target.value)}></input>
+                        </div>
 
-                <div className='form-group'>
-                    <label>Sukunimi: </label>
-                    <input className='form-control' onChange={e => setLastname(e.target.value)}></input>
-                </div>
+                        <div className='form-group'>
+                            <label>Sukunimi: </label>
+                            <input className='form-control' onChange={e => setLastname(e.target.value)}></input>
+                        </div>
 
-                <div className='form-group'>
-                    <label>Osoite: </label>
-                    <input className='form-control' onChange={e => setAddress(e.target.value)}></input>
-                </div>
+                        <div className='form-group'>
+                            <label>Osoite: </label>
+                            <input className='form-control' onChange={e => setAddress(e.target.value)}></input>
+                        </div>
 
-                <div className='form-group'>
-                    <label>Postinumero: </label>
-                    <input className='form-control' onChange={e => setZip(e.target.value)}></input>
-                </div>
+                        <div className='form-group'>
+                            <label>Postinumero: </label>
+                            <input className='form-control' onChange={e => setZip(e.target.value)}></input>
+                        </div>
 
-                <div className='form-group'>
-                    <label>Kunta: </label>
-                    <input className='form-control' onChange={e => setCity(e.target.value)}></input>
-                </div>
+                        <div className='form-group'>
+                            <label>Kunta: </label>
+                            <input className='form-control' onChange={e => setCity(e.target.value)}></input>
+                        </div>
 
-                <div className='buttons' style={{'paddingTop' : '20px', 'paddingBottom' : '81px'}}>
-                    <button className="btn btn-primary" onClick={() => setTilaus(false) + setFinished(false)}> {'<<'}Taaksepäin</button>
-                    <button style={{'marginLeft' : '50px'}} className="btn btn-primary" onClick={() => setTilaus(false)}>Tilaa</button>
-                </div>
-            </form>
+                        <div style={{'paddingTop' : '20px'}}>
+                            <button className="btn" onClick={() => setTilaus(false) + setFinished(false)}> {'<<'} Taaksepäin</button>
+                            <button style={{'marginLeft' : '10px'}} className="btn" onClick={() => setTilaus(false)}>Tilaa</button>
+                        </div>
+                    </form>             
+            </div>
             </>
         )
     }

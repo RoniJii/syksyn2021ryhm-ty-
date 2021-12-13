@@ -48,7 +48,7 @@ tumma ruskea (esim teksteihin) #31231D
 
 
 /* Ota yhteyttä -sivun ja order -sivun tyylimäärittelyt */
-.contact, .order {
+.contact, .cart, .order {
   width: 100%;
   display: flex;
   align-items: center;
@@ -66,9 +66,15 @@ tumma ruskea (esim teksteihin) #31231D
   height: 95vh;
 }
 
-.order {
+.cart {
   background-image: url('components/images/kuva12.png');
   height: 95vh;
+  color: #31231D;
+}
+
+.order {
+  background-image: url('components/images/kuva12.png');
+  height: 115vh;
   color: #31231D;
 }
 
@@ -79,7 +85,7 @@ table {
 
 h2 {
   font-size: 40px;
-  padding: 50px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 
 th, tr, td {
@@ -102,6 +108,11 @@ td a:hover {
 
 .order_submit {
   padding-top: 30px;
+}
+
+.order_form {
+  padding-top: 100px;
+  width: 360px;
 }
 
 /* Kirjaudu sisään & rekisteröidy -sivujen tyylimäärittelyt */
