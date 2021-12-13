@@ -29,9 +29,6 @@ export default function Coffeecards({url, category, addToCart}) {
 
     return (
         <>
-        <div>
-        <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastastu!</h3>  
-        </div>
             <h1 className='coffee'>Kahvituotteet</h1>
             <div className='cards'>
                 <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastu!</h3>

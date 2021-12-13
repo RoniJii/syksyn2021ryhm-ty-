@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 
-.col-3 {
-    width: 33%;
-}
-
 .cards {
     padding: 4rem;
     background: #E3DECA;
@@ -16,6 +12,7 @@ h1 {
 h3 {
     text-align: center;
     color: #31231D;
+    padding-bottom: 40px;
 }
   
 .cards_container {
