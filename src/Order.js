@@ -144,7 +144,7 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
                         </div>
 
                         <div className='form-group'>
-                            <label>Kunta: </label>
+                            <label>Kaupunki: </label>
                             <input className='form-control' onChange={e => setCity(e.target.value)}></input>
                         </div>
 
@@ -158,6 +158,6 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
         )
     }
     else {
-        return (<h3 style={{'padding' : '350px' }}>Kiitos tilauksesta!</h3>)
+        return (<h3 style={{'padding' : '250px' }}>Kiitos tilauksesta!</h3>)
     }
 }
