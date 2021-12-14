@@ -94,17 +94,17 @@ function Resource(props){
 
     if(content === "admin") {
       return (
-        <div style={{margin: '294px'}}>
-          <h3>Logged in as: {content}</h3>
-          <button className='btn' type='button' onClick={logout} >Logout</button>
-          <Link style={{marginLeft: '25px'}} to="/admin"><button className='btn' type='button'>Admin panel</button></Link>
+        <div style={{margin: '150px'}}>
+          <h4>Olet kirjautunut sisään käyttäjänä: {content}</h4>
+          <button className='btn' type='button' onClick={logout} >Kirjaudu ulos</button>
+          <Link style={{marginLeft: '10px'}} to="/admin"><button className='btn' type='button'>Admin panel</button></Link>
         </div>
       );
     } else {
     return (
-      <div style={{marginTop: '150px'}}>
-        <p>Logged in as: {content}</p>
-        <button className='btn' type='button' onClick={logout}>Logout</button>
+      <div style={{marginTop: '150px', 'marginBottom' : '80px'}}>
+        <h4>Olet kirjautunut sisään käyttäjänä: {content}</h4>
+        <button className='btn' type='button' onClick={logout}>Kirjaudu ulos</button>
       </div>
     );
   }
