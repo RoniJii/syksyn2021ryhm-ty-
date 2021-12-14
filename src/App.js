@@ -39,7 +39,6 @@ export default function App() {
     useEffect(() => {
         if ('cart' in localStorage) {
           setCart(JSON.parse(localStorage.getItem('cart')));
-          //localStorage.clear()  // tyhjentää local storagen refreshillä
         }
       }, []);
     

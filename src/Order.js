@@ -150,7 +150,7 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
 
                         <div style={{'paddingTop' : '20px'}}>
                             <button className="btn" onClick={() => setTilaus(false) + setFinished(false)}> {'<<'} Taaksepäin</button>
-                            <button style={{'marginLeft' : '10px'}} className="btn" onClick={() => setTilaus(false)}>Tilaa</button>
+                            <button style={{'marginLeft' : '10px'}} className="btn" onClick={() => setTilaus(false) + emptyCart()}>Tilaa</button>
                         </div>
                     </form>             
             </div>
@@ -158,6 +158,6 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
         )
     }
     else {
-        return (<h3 style={{'padding' : '250px' }}>Kiitos tilauksesta!</h3>)
+        return (<h3 style={{'padding' : '311px' }}>Kiitos tilauksesta!</h3>)
     }
 }
