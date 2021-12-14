@@ -19,8 +19,8 @@ tumma ruskea (esim teksteihin) #31231D
 }
 
 /* Tuotteet -sivujen tyylimäärittelyt */
-.coffee,
-.tea, .stuff {
+.Kahvi,
+.Tee, .Muut {
   width: 100%;
   height: 95vh;
   display: flex;
@@ -34,15 +34,15 @@ tumma ruskea (esim teksteihin) #31231D
   margin-bottom: 10px;
 }
 
-.coffee { 
+.Kahvi { 
   background-image: url('components/images/kuva1.png'); 
 }
 
-.tea {
+.Tee {
   background-image: url('components/images/kuva10.png'); 
 }
 
-.stuff {
+.Muut {
   background-image: url('components/images/kuva2.png'); 
 }
 

@@ -10,8 +10,9 @@ export default function Coffeecards({url, category, addToCart}) {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
+        console.log(category.name)
         if (category !== null) {
-            const address = ('http://localhost/syksynprojekti2021/products/getproducts.php/' + 1);
+            const address = ('http://localhost/syksynprojekti2021/products/getproducts.php/' + category.id);
             console.log(address)
             axios.get(address)
             .then((response) => {
@@ -29,7 +30,7 @@ export default function Coffeecards({url, category, addToCart}) {
 
     return (
         <>
-            <h1 className='coffee'>Kahvituotteet</h1>
+            <h1 className={category.name}>{category.name}tuotteet</h1>
             <div className='cards'>
                 <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia kahveja. Tutustu ja ihastu!</h3>
                 <ul className='card_items'>
