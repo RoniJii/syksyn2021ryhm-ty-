@@ -10,9 +10,9 @@ import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
 import Admin from './components/Admin';
-import Coffee from './components/Coffee';
-import Tea from './components/Tea';
-import Stuff from './components/Stuff';
+import Kahvia from './components/Kahvia';
+import Teet from './components/Teet';
+import Muut from './components/Muut';
 import Product from './components/Product';
 
 const URL = "http://localhost/syksynprojekti2021/";
@@ -28,7 +28,7 @@ export default function App() {
 
     useEffect(() => {
         if (location.state !==undefined) {
-          if (location.pathname==="/coffee") {
+          if (location.pathname==="/kahvia") {
             setCategory({id: location.state.id, name: location.state.name});
           } else if (location.pathname==="/product") {
             setProduct({id: location.state.id, name: location.state.name});
@@ -100,22 +100,22 @@ export default function App() {
                 url={URL}/>}
             />
 
-            <Route path='/coffee' render={() => 
-              <Coffee 
+            <Route path='/kahvia' render={() => 
+              <Kahvia 
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path='/tea' render={() => 
-              <Tea
+            <Route path='/teet' render={() => 
+              <Teet
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path='/stuff' render={() => 
-              <Stuff
+            <Route path='/muut' render={() => 
+              <Muut
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
