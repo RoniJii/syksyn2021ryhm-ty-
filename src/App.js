@@ -123,7 +123,7 @@ export default function App() {
 
             <Route path='/product' render={() => 
               <Product
-                URL={URL}
+                url={URL}
                 product={product}
                 addToCart={addToCart}/>}
               />

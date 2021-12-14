@@ -46,8 +46,8 @@ export default function Coffeecards({url, category, addToCart}) {
                             }}>
                             </Link>
                                 <div className='card_item'>
-                                    <div to='/product' className='card_item_link'>
-                                            <Link>
+                                    <div className='card_item_link'>
+                                            <Link to='/product' >
                                                 <figure className='card_item_pic-wrap'>
                                                     <img className='card_item_img' src={URL + 'images/' + product.image} alt={product?.name}/>
                                                 </figure>
