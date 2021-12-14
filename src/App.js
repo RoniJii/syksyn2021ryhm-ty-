@@ -10,8 +10,8 @@ import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
 import Admin from './components/Admin';
-import Kahvia from './components/Kahvia';
-import Teet from './components/Teet';
+import Kahvi from './components/Kahvi';
+import Tee from './components/Tee';
 import Muut from './components/Muut';
 import Product from './components/Product';
 
@@ -100,15 +100,15 @@ export default function App() {
                 url={URL}/>}
             />
 
-            <Route path='/kahvia' render={() => 
-              <Kahvia 
+            <Route path='/kahvi' render={() => 
+              <Kahvi 
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
               />
 
-            <Route path='/teet' render={() => 
-              <Teet
+            <Route path='/tee' render={() => 
+              <Tee
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
