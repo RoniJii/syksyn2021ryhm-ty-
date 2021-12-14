@@ -94,10 +94,10 @@ function Resource(props){
 
     if(content === "admin") {
       return (
-        <div style={{marginTop: '150px'}}>
-          <p>Logged in as: {content}</p>
-          <button className='btn' type='button' onClick={logout}>Logout</button>
-          <Link to="/admin"><button className='btn' type='button'>Admin panel</button></Link>
+        <div style={{margin: '294px'}}>
+          <h3>Logged in as: {content}</h3>
+          <button className='btn' type='button' onClick={logout} >Logout</button>
+          <Link style={{marginLeft: '25px'}} to="/admin"><button className='btn' type='button'>Admin panel</button></Link>
         </div>
       );
     } else {
