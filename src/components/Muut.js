@@ -11,7 +11,7 @@ const URL = "http://localhost/syksynprojekti2021/";
 
   useEffect(() => {
     if (category !== null) {
-        const address = ('http://localhost/syksynprojekti2021/products/getproducts.php/' + category.id);
+        const address = ('http://localhost/syksynprojekti2021/products/getproducts.php/' + 3);
         console.log(address)
         axios.get(address)
         .then((response) => {
