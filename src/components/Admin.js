@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../App.css';
 
 //const url = "http://localhost/syksynprojekti2021/";
 
@@ -60,20 +61,20 @@ export default function Admin({url}) {
 
     return (
         <div>
-            <form>
-                <div style={{marginTop: '150px'}}>
-                <label>New item</label>
-                <input value={name} placeholder="type name" onChange={e => setName(e.target.value)} />
-                <input value={price}  placeholder="type price" onChange={e => setPrice(e.target.value)} />
-                <input value={image} placeholder="type image" onChange={e => setImage(e.target.value)} />
-                <input value={categoryid}  placeholder="type category" onChange={e => setCategoryId(e.target.value)} />
-                <button onClick={newitem}>Add</button>
+            <form className='form-container'>
+                <div className='admin-panel' style={{marginTop: '100px'}}>
+                <h4>Uusi tuote</h4>
+                <input className='form-field' value={name} placeholder="tuotenimi" onChange={e => setName(e.target.value)} />
+                <input className='form-field' value={price}  placeholder="hinta" onChange={e => setPrice(e.target.value)} />
+                <input className='form-field' value={image} placeholder="tuotekuva" onChange={e => setImage(e.target.value)} />
+                <input className='form-field' value={categoryid}  placeholder="tuoteryhmänimi" onChange={e => setCategoryId(e.target.value)} />
+                <button className='form-field' onClick={newitem}>Lisää</button>
                 </div>
 
-                <div style={{marginTop: '10px'}}>
-                <label>New category</label>
-                <input value={category}  placeholder="type categery name" onChange={e => setCategory(e.target.value)} />
-                <button onClick={newcategory}>Add</button>
+                <div className='admin-panel' style={{marginTop: '10px'}}>
+                <h4>Uusi tuoteryhmä</h4>
+                <input className='form-field' value={category}  placeholder="tuoteryhmänimi" onChange={e => setCategory(e.target.value)} />
+                <button className='form-field' onClick={newcategory}>Lisää</button>
                 </div>
             </form>
         </div>

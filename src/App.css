@@ -47,7 +47,7 @@ tumma ruskea (esim teksteihin) #31231D
 }
 
 
-/* Ota yhteyttä -sivun ja order -sivun tyylimäärittelyt */
+/* Ota yhteyttä -sivun, ostoskorin ja order -sivun tyylimäärittelyt */
 .contact, .cart, .order {
   width: 100%;
   display: flex;
@@ -114,7 +114,8 @@ td a:hover {
   width: 360px;
 }
 
-/* Kirjaudu sisään & rekisteröidy -sivujen tyylimäärittelyt */
+/* Kirjaudu sisään & rekisteröidy -sivujen tyylimäärittelyt,
+Admin */
 
 .sign-up, .register {
   width: 100%;
@@ -142,7 +143,7 @@ h3.teksti1 {
   color: #5C2C0C!important;
 }
 
-.signup-form {
+.signup-form, .admin-panel {
   display: flex;
   flex-direction: column;
 }
@@ -173,4 +174,3 @@ button {
   color: snow;
   cursor: pointer;
 }
-
