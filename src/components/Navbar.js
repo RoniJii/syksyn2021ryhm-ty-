@@ -67,7 +67,7 @@ export default function Navbar({url, setCategory, cart}) {
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/signup"><i class="far fa-user"></i></Link>
             </li>
-            <li className="nav-item" style={{paddingTop : "16px"}>
+            <li className="nav-item" style={{paddingTop : "16px"}}>
               <Cart cart={cart}/>
             </li>
           </ul>
