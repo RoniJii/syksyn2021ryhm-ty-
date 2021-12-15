@@ -23,7 +23,7 @@ export default function Karuselli() {
                     alt="Second slide"
                     />
                 <Carousel.Caption>
-                    <h3> Joulun sesonkituotteet ovat nyt saapuneet!</h3>
+                    <h3 style={{'color' : 'snow', 'text-shadow' : '0 0 2px #000'}}> Joulun sesonkituotteet ovat nyt saapuneet!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -34,7 +34,7 @@ export default function Karuselli() {
                     />
 
                     <Carousel.Caption>
-                    <h3>Haluatko jauhaa omat papusi? Meiltä löydät papujen jauhamiseen tarvittavat laitteet!</h3>
+                    <h3 style={{'color' : 'snow', 'text-shadow' : '0 0 2px #000'}}>Haluatko jauhaa omat papusi? Meiltä löydät papujen jauhamiseen tarvittavat välineet!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

@@ -15,7 +15,13 @@ tumma ruskea (esim teksteihin) #31231D
 
 /* Karuselli */
 .carousel {
-  width: 100%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: snow;
 }
 
 /* Tuotteet -sivujen tyylimäärittelyt */
