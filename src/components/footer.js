@@ -1,8 +1,6 @@
 import React from 'react';
 import './footer.css';
 import Logo from './logo.png';
-import { Link } from 'react-router-dom';
-
 
 export default function footer() {
     return (
@@ -16,9 +14,9 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
             <h6>TUOTTEEMME</h6>
-              <Link to='/kahvi'>Kahvit</Link>
-              <Link to='/tee'>Teet</Link>
-              <Link to='/muut'>Muut</Link>
+              <p>Kahvit</p>
+              <p>Teet</p>
+              <p>Muut</p>
             </div>
           </div>
           <div className='footer-link-wrapper'>
@@ -28,9 +26,9 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
               <h6>SEURAA MEITÄ</h6>
-              <Link to='/contact'> <i class='fab fa-instagram' /> Instagram</Link>
-              <Link to='/contact'> <i class='fab fa-facebook-f' /> Facebook</Link>
-              <Link to='/contact'> <i class='fab fa-youtube' /> Youtube</Link>
+              <p> <i class='fab fa-instagram' /> Instagram</p>
+              <p> <i class='fab fa-facebook-f' /> Facebook</p>
+              <p> <i class='fab fa-youtube' /> Youtube</p>
             </div>
           </div>
         </div>
