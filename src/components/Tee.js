@@ -31,7 +31,6 @@ export default function TeaCards({url, category, addToCart}) {
     <>
       <h1 className='tea'>Teetuotteet</h1>
       <div className='cards'>
-        <h3 className='teksti1'>Valikoimastamme löydät paljon erilaisia teemakuja. Tutustu ja ihastu!</h3>
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>

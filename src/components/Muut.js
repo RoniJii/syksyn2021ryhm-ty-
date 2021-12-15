@@ -31,7 +31,6 @@ const URL = "http://localhost/syksynprojekti2021/";
     <>
       <h1 className='stuff'>Muut tuotteemme</h1>
       <div className='cards'>
-        <h3 className='teksti1'>Valikoimastamme löydät kahvin ja teen valmistukseen tarvittavia välineitä!</h3>
         <div className='cards_container'>
           <div className='card_wrapper'>
             <ul className='card_items'>
