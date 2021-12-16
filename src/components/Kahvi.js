@@ -30,7 +30,7 @@ export default function Coffeecards({url, category, addToCart}) {
 
     return (
         <>
-            <h1 style={{'text-shadow' : '0 0 5px #000'}} className={category.name}>{category.name}</h1>
+            <h1 style={{'textShadow' : '0 0 5px #000'}} className={category.name}>{category.name}</h1>
             <div className='cards'>
                 <ul className='card_items'>
                     {products.map(product => (

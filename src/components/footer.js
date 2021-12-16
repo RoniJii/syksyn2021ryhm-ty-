@@ -14,8 +14,8 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
             <h6>TUOTTEEMME</h6>
-              <p>Kahvit</p>
-              <p>Teet</p>
+              <p>Kahvi</p>
+              <p>Tee</p>
               <p>Muut</p>
             </div>
           </div>
