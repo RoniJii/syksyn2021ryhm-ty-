@@ -174,3 +174,9 @@ button {
   color: snow;
   cursor: pointer;
 }
+
+ .orderbutton {
+   color: black;
+   background-color: transparent;
+   border: none
+ }
