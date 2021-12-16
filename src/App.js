@@ -10,7 +10,7 @@ import SignUp from './components/pages/SignUp';
 import Register from './components/pages/Register';
 import Order from './Order';
 import Admin from './components/Admin';
-import Kahvi from './components/Kahvi';
+import Tuotteet from './components/Tuotteet';
 import Tee from './components/Tee';
 import Muut from './components/Muut';
 import Product from './components/Product';
@@ -28,7 +28,7 @@ export default function App() {
 
     useEffect(() => {
         if (location.state !==undefined) {
-          if (location.pathname==="/kahvi") {
+          if (location.pathname==="/Tuotteet") {
             setCategory({id: location.state.id, name: location.state.name});
           } else if (location.pathname==="/product") {
             setProduct({id: location.state.id, name: location.state.name});
@@ -99,8 +99,8 @@ export default function App() {
                 url={URL}/>}
             />
 
-            <Route path='/kahvi' render={() => 
-              <Kahvi 
+            <Route path='/Tuotteet' render={() => 
+              <Tuotteet 
                 emptyCart={emptyCart}
                 category={category}
                 addToCart={addToCart}/>}
