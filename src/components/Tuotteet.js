@@ -38,7 +38,7 @@ export default function Coffeecards({url, category, addToCart}) {
                             <div key={product.id}>
                             <Link 
                                 to={{
-                                pathname: '/product',
+                                pathname: '/',
                                 state: {
                                     id: product.id,
                                     name: product.name,
