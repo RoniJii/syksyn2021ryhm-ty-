@@ -15,7 +15,7 @@ tumma ruskea (esim teksteihin) #31231D
 
 /* Karuselli */
 .carousel {
-  width: 85%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,8 +119,7 @@ td a:hover {
   width: 360px;
 }
 
-/* Kirjaudu sisään & rekisteröidy -sivujen tyylimäärittelyt,
-Admin */
+/* Kirjaudu sisään & rekisteröidy -sivujen tyylimäärittelyt, Admin */
 
 .sign-up, .register {
   width: 100%;
@@ -144,19 +143,15 @@ Admin */
   width: 360px;
 }
 
-h3.teksti1 {
-  color: #5C2C0C!important;
-}
-
 .signup-form, .admin-panel {
   display: flex;
   flex-direction: column;
 }
 
 .form-field {
-  margin: 6px 0 12px 0;
-  padding: 10px;
-  font-size: 15px;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  font-size: 14px;
   border: 0;
   border-radius: 2px;
 }
