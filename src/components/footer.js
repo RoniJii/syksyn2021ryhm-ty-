@@ -8,7 +8,7 @@ export default function footer() {
         <div className='footer-links'>
           <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
-            <figure>
+              <figure>
                 <img className='logo' alt='logo' src={Logo} style={{ maxHeight: '130px'}}></img>
               </figure>
             </div>
@@ -26,9 +26,9 @@ export default function footer() {
             </div>
             <div className='footer-link-items'>
               <h6>SEURAA MEITÄ</h6>
-              <p> <i class='fab fa-instagram' /> Instagram</p>
-              <p> <i class='fab fa-facebook-f' /> Facebook</p>
-              <p> <i class='fab fa-youtube' /> Youtube</p>
+              <p> <i className='fab fa-instagram' /> Instagram</p>
+              <p> <i className='fab fa-facebook-f' /> Facebook</p>
+              <p> <i className='fab fa-youtube' /> Youtube</p>
             </div>
           </div>
         </div>
