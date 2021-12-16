@@ -40,7 +40,7 @@ export default function Register() {
   const history = useHistory();
 
   const goShopping = () => {
-    let path = '/kahvia'
+    let path = '/tuotteet'
     history.push(path);
   }
 

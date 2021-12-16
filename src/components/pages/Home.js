@@ -4,11 +4,6 @@ import Karuselli from '../Karuselli';
 import '../../App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-//import { v4 as uuidv4 } from 'uuid';
-
-///urlin tuonti ei toimi edelleenkään..
-
-//const URL = "http://localhost/syksynprojekti2021/";
 
 export default function Home({url, category}) {
     const [products, setProducts] = useState([]);

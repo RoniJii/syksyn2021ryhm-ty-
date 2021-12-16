@@ -122,7 +122,7 @@ export default function Order({url, cart, removeFromCart, updateAmount, emptyCar
             <>
             <div className='order'>
                     <form className='order_form' onSubmit={order}>
-                        <h2 style={{'paddingTop' : '10px'}}>Toimitustiedot</h2>
+                        <h2>Toimitustiedot</h2>
                         <div className='form-group'>
                             <label>Etunimi: </label>
                             <input className='form-control' onChange={e => setFirstname(e.target.value)}></input>

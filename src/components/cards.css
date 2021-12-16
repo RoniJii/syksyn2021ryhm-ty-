@@ -6,24 +6,25 @@
 h3 {
   text-align: center;
   color: #31231D;
+  margin-bottom: 30px;
 }
 
 .cards__container {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  
 }
 
 .cards__wrapper {
   position: relative;
-  margin: 50px 0 45px;
+  margin-top: 30px;
 }
 
 .cards__items {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .cards__item {
@@ -49,11 +50,6 @@ h3 {
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
-}
-
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
 }
 
 .cards__item__pic-wrap::after {
@@ -96,7 +92,7 @@ h3 {
 
 .cards__item__text {
   color: #31231D;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 

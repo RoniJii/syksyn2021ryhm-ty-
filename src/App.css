@@ -15,7 +15,7 @@ tumma ruskea (esim teksteihin) #31231D
 
 /* Karuselli */
 .carousel {
-  width: 80%;
+  width: 90%;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -81,7 +81,7 @@ h3 {
 
 .order {
   background-image: url('components/images/kuva12.png');
-  height: 115vh;
+  height: 110vh;
   color: #31231D;
 }
 
@@ -92,7 +92,7 @@ table {
 
 h2 {
   font-size: 40px;
-  padding: 30px 0 10px 0;
+  padding-top: 20px;
 }
 
 th, tr, td {
@@ -117,7 +117,6 @@ td a:hover {
 }
 
 .order_form {
-  padding-top: 100px;
   width: 360px;
 }
 
@@ -156,9 +155,9 @@ h3.teksti1 {
 }
 
 .form-field {
-  margin: 6px 0 12px 0;
-  padding: 10px;
-  font-size: 15px;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  font-size: 14px;
   border: 0;
   border-radius: 2px;
 }
@@ -182,10 +181,10 @@ button {
   cursor: pointer;
 }
 
- .yllapito {
+/*  .yllapito {
   margin-top: 250px;
   margin-bottom: 284px;
- }
+ } */
 
  .orderbutton {
    color: black;

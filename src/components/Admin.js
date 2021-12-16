@@ -63,7 +63,7 @@ export default function Admin({url}) {
         <div>
             <form className='form-container'>
                 <div className='admin-panel' style={{marginTop: '100px'}}>
-                <h4>Uusi tuote</h4>
+                <h5>Uusi tuote</h5>
                 <input className='form-field' value={name} placeholder="tuotenimi" onChange={e => setName(e.target.value)} />
                 <input className='form-field' value={price}  placeholder="hinta" onChange={e => setPrice(e.target.value)} />
                 <input className='form-field' value={image} placeholder="tuotekuva" onChange={e => setImage(e.target.value)} />
@@ -72,7 +72,7 @@ export default function Admin({url}) {
                 </div>
 
                 <div className='admin-panel' style={{marginTop: '10px'}}>
-                <h4>Uusi tuoteryhmä</h4>
+                <h5>Uusi tuoteryhmä</h5>
                 <input className='form-field' value={category}  placeholder="tuoteryhmänimi" onChange={e => setCategory(e.target.value)} />
                 <button className='form-field' onClick={newcategory}>Lisää</button>
                 </div>
